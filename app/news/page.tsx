@@ -74,6 +74,7 @@ function NewsContent() {
                     alt={item.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
                   />
                 </div>
                 <h3 className="text-sm font-medium text-[#1a1a1a] group-hover:text-[#004127] transition-colors">
