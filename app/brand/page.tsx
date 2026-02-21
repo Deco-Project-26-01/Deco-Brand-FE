@@ -13,7 +13,7 @@ function BrandContent() {
   const category = searchParams.get("category") || "rings"
 
   const categories = [
-    { id: "rings", label: "Rings" },
+    { id: "necklace", label: "Necklace" },
     { id: "bracelets", label: "Bracelets" },
   ]
 
@@ -29,11 +29,10 @@ function BrandContent() {
               <Link
                 key={cat.id}
                 href={`/brand?category=${cat.id}`}
-                className={`py-3 text-sm font-medium border-b-2 transition-colors ${
-                  category === cat.id
+                className={`py-3 text-sm font-medium border-b-2 transition-colors ${category === cat.id
                     ? "border-[#004127] text-[#004127]"
                     : "border-transparent text-[#7d7d7d] hover:text-[#1a1a1a]"
-                }`}
+                  }`}
               >
                 {cat.label}
               </Link>
@@ -59,7 +58,7 @@ function BrandContent() {
             </div>
 
             <h2 className="text-2xl md:text-3xl font-bold text-[#ffffff] mb-4">
-              Headline goes here
+              Discover Our Necklace & Bracelet Designs
             </h2>
 
             <div className="space-y-2 mb-6 max-w-[400px]">
