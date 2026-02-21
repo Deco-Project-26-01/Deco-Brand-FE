@@ -55,27 +55,49 @@ function AboutContent() {
 
           {/* Content Area */}
           <div className="py-8">
-            {/* Placeholder image */}
-            <div className="w-full max-w-[480px] mx-auto mb-8">
-              <div className="w-full h-4 bg-[#4f4f4f] rounded-full mb-2" />
-              <div className="w-[60%] h-4 bg-[#7d7d7d] rounded-full" />
-            </div>
+            {activeTab === "contact" ? (
+              <div className="max-w-[600px] mx-auto">
+                <h2 className="text-xl font-semibold text-[#1a1a1a] mb-8">
+                  Contact
+                </h2>
+                <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
+                  <li>E-mail: <a href="mailto:decoindco@naver.com" className="text-[#004127] underline">decoindco@naver.com</a></li>
+                  <li>E-mail: <a href="mailto:decoindco@gmail.com" className="text-[#004127] underline">decoindco@gmail.com</a></li>
+                </ul>
+                <hr className="my-6 border-[#cfcfcf]" />
+                <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
+                  <li>Tel: +82-2-747-0908~9 (Sales)</li>
+                  <li>Tel: +82-63-833-8435 (Factory)</li>
+                  <li>Phone: +82-10-8022-4255</li>
+                </ul>
+                <hr className="my-6 border-[#cfcfcf]" />
+                <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
+                  <li>Address: 15-8, Seonhwa-ro 63-gil, Iksan-si, Jeollabuk-do, Republic of Korea</li>
+                </ul>
+              </div>
+            ) : (
+              <>
+                {/* Placeholder image */}
+                <div className="w-full max-w-[480px] mx-auto mb-8">
+                  <div className="w-full h-4 bg-[#4f4f4f] rounded-full mb-2" />
+                  <div className="w-[60%] h-4 bg-[#7d7d7d] rounded-full" />
+                </div>
 
-            {/* Headline */}
-            <h2 className="text-xl font-semibold text-[#1a1a1a] text-center mb-6">
-              Deco Industry Co., Ltd. was established at 15-8, Seonhwa-ro 63-gil, Iksan-si, Jeollabuk-do (Yeongdeung-dong)
-            </h2>
+                {/* Headline */}
+                <h2 className="text-xl font-semibold text-[#1a1a1a] text-center mb-6">
+                  Headline goes here
+                </h2>
 
-            {/* Description placeholder */}
-            <div className="max-w-[480px] mx-auto space-y-2 mb-8">
-              <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
-              <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
-              <div className="h-2.5 bg-[#cfcfcf] rounded-full w-[90%]" />
-              <div className="h-2.5 bg-[#eef1f4] rounded-full w-[80%]" />
-              <div className="h-2.5 bg-[#eef1f4] rounded-full w-[70%]" />
-            </div>
-
-
+                {/* Description placeholder */}
+                <div className="max-w-[480px] mx-auto space-y-2 mb-8">
+                  <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
+                  <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
+                  <div className="h-2.5 bg-[#cfcfcf] rounded-full w-[90%]" />
+                  <div className="h-2.5 bg-[#eef1f4] rounded-full w-[80%]" />
+                  <div className="h-2.5 bg-[#eef1f4] rounded-full w-[70%]" />
+                </div>
+              </>
+            )}
           </div>
         </div>
         <hr></hr>
