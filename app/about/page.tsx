@@ -76,6 +76,25 @@ function AboutContent() {
                   <li>Address: 15-8, Seonhwa-ro 63-gil, Iksan-si, Jeollabuk-do, Republic of Korea</li>
                 </ul>
               </div>
+            ) : activeTab === "about us" ? (
+              <div className="max-w-[700px] mx-auto space-y-8">
+                <div>
+                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Nature of Business</h2>
+                  <p className="text-sm text-[#4f4f4f] leading-relaxed">Exporter, Manufacturer</p>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product / Service Range</h2>
+                  <p className="text-sm text-[#4f4f4f] leading-relaxed">Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery</p>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Exhibit / Brand / Service Description</h2>
+                  <p className="text-sm text-[#4f4f4f] leading-relaxed">18K gold mounting jewellery of tennis bracelet, necklace & earring for diamonds.</p>
+                </div>
+                <div>
+                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
+                  <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong (China), India, Japan, USA</p>
+                </div>
+              </div>
             ) : (
               <>
                 {/* Placeholder image */}
