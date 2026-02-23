@@ -9,11 +9,11 @@ import { Suspense } from "react"
 import { ArrowUp, ChevronRight } from "lucide-react"
 
 const newsItems = [
-  { id: 1, title: "$5 million Export Tower ,2004", image: "/images/conference.jpg" },
+  { id: 1, title: "Dubai Show", image: "/images/conference.jpg" },
   { id: 2, title: "Hong Kong International Jewellery Show 2006", image: "/images/conference.jpg" },
   { id: 3, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/conference.jpg" },
   { id: 4, title: "JCK Show Las Vegas 2026 ", image: "/images/conference.jpg" },
-  { id: 5, title: "This is News Title", image: "/images/conference.jpg" },
+  { id: 5, title: "$5 million Export Tower ,2004", image: "/images/conference.jpg" },
   { id: 6, title: "This is News Title", image: "/images/conference.jpg" },
 ]
 
