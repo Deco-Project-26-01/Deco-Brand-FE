@@ -9,8 +9,8 @@ import { Suspense } from "react"
 import { ArrowUp, ChevronRight } from "lucide-react"
 
 const newsItems = [
-  { id: 1, title: "This is News Title", image: "/images/conference.jpg" },
-  { id: 2, title: "This is News Title", image: "/images/conference.jpg" },
+  { id: 1, title: "$5 million Export Tower ,2004", image: "/images/conference.jpg" },
+  { id: 2, title: "Hong Kong International Jewellery Show 2006", image: "/images/conference.jpg" },
   { id: 3, title: "This is News Title", image: "/images/conference.jpg" },
   { id: 4, title: "This is News Title", image: "/images/conference.jpg" },
   { id: 5, title: "This is News Title", image: "/images/conference.jpg" },
@@ -53,11 +53,10 @@ function NewsContent() {
               <a
                 key={tab.id}
                 href={`/news?tab=${tab.id}`}
-                className={`px-4 py-2 text-sm font-medium border transition-colors ${
-                  activeTab === tab.id
-                    ? "bg-[#004127] text-[#ffffff] border-[#004127]"
-                    : "bg-[#ffffff] text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127]"
-                }`}
+                className={`px-4 py-2 text-sm font-medium border transition-colors ${activeTab === tab.id
+                  ? "bg-[#004127] text-[#ffffff] border-[#004127]"
+                  : "bg-[#ffffff] text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127]"
+                  }`}
               >
                 {tab.label}
               </a>
