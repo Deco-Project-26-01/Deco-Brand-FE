@@ -101,7 +101,7 @@ function AboutContent() {
                 {/* Factory image */}
                 <div className="relative w-full aspect-[16/9] mb-8 overflow-hidden rounded">
                   <Image
-                    src="/images/decoindcoltd_factory.jpg"
+                    src="/images/decoindcoltd_factory.JPG"
                     alt="Deco Industry Co., Ltd. Factory"
                     fill
                     className="object-cover"
