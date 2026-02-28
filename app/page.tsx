@@ -58,7 +58,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row items-start gap-8">
             <div className="flex-1">
               <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">We are a manufacturer of the 10k,14k,18k mounting for "tennis bracelets,necklace,
-                earrings"for diamonds color stones. </h2>
+                earrings" for diamonds color stones. </h2>
               <div className="space-y-2">
                 <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
                 <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
