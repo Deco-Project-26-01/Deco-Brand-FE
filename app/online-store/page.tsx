@@ -128,7 +128,7 @@ export default function OnlineStorePage() {
         <div className="fixed bottom-8 right-8">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="w-10 h-10 bg-[#1a1a1a] text-[#ffffff] rounded-full flex items-center justify-center hover:bg-[#4f4f4f] transition-colors cursor-pointer"
+            className="w-10 h-10 bg-[#F1BC69] text-[#1a1a1a] rounded-full flex items-center justify-center hover:bg-[#e0a94f] transition-colors cursor-pointer"
             aria-label="Scroll to top"
           >
             <ArrowUp className="w-4 h-4" />
