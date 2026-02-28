@@ -28,7 +28,7 @@ function AboutContent() {
           <BreadcrumbNav
             items={[
               { label: "Home", href: "/" },
-              { label: "Company", href: "/about" },
+              { label: "Company", href: "/company" },
               { label: tabs.find(t => t.id === activeTab)?.label || "About us" },
             ]}
           />
@@ -43,7 +43,7 @@ function AboutContent() {
             {tabs.map((tab) => (
               <a
                 key={tab.id}
-                href={`/about?tab=${tab.id}`}
+                href={`/company?tab=${tab.id}`}
                 className={`px-4 py-2 text-sm font-medium border transition-colors ${activeTab === tab.id
                   ? "bg-[#004127] text-[#ffffff] border-[#004127]"
                   : "bg-[#ffffff] text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127]"

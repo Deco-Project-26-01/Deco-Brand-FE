@@ -13,7 +13,7 @@ export default function Footer() {
             </Link>
           </div>
           <Link
-            href="/about?tab=contact"
+            href="/company?tab=contact"
             className="bg-[#004127] text-[#ffffff] text-xs font-semibold px-5 py-2 rounded hover:bg-[#004127]/90 transition-colors"
           >
             Contact
