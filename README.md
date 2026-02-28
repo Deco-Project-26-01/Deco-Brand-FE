@@ -3,6 +3,27 @@ Deco Brand 회사소개의 Front-end 레포지토리
 
 "We are a manufacturer of the 10k,14k,18k mounting for "tennis bracelets,necklace"
 
+
+## Brand
+🟦 About Us
+회사 소개 About us
+
+생산 경험 How we work
+
+수출 국가
+
+품질 관리 방식
+
+👉 B2B 필수 신뢰 페이지
+
+🟦 Contact
+문의 
+- 전화번호
+- 이메일
+Footer
+- whatsapp
+- instagram
+
 ### Nature of Business
 Exporter, Manufacturer
 
@@ -18,6 +39,9 @@ UAE,Hong Kong(China),India,Japan,USA
 ### showcase
 https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=showcase
 
+<hr>
+
+## Store
 
 🌐 1️⃣ 외부 방문자용 메뉴 (영업용 사이트)
 🟦 Home
@@ -76,27 +100,9 @@ MOQ 안내⭐
 
 👉 신규 바이어 유입용
 
-🟦 About Us
-회사 소개
 
-생산 경험
 
-수출 국가
-
-품질 관리 방식
-
-👉 B2B 필수 신뢰 페이지
-
-🟦 Contact
-문의 (전화번호)
-
-이메일
-
-whatsapp
-
-instagram
 
 지도
-카카오/WhatsApp
-
-지도
+- 카카오
+  
