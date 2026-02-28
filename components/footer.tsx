@@ -27,7 +27,7 @@ export default function Footer() {
             <p className="mt-1">COPYRIGHT &copy; Deco.co.kr All Rights Reserved.</p>
           </div>
           <div className="flex items-center gap-5">
-            <Link href="#" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
+            <Link href="https://www.linkedin.com/in/sangho-k-36204b242/" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
               <Linkedin className="w-4 h-4" />
               <span>LinkedIn</span>
             </Link>
@@ -37,7 +37,7 @@ export default function Footer() {
             </Link>
             <Link href="#" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
               <Youtube className="w-4 h-4" />
-              <span>YouTube</span>
+              <span>Whatsapp</span>
             </Link>
           </div>
         </div>

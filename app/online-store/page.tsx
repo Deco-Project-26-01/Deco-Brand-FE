@@ -10,13 +10,13 @@ const products = [
   {
     id: 1,
     title: "제목입니다",
-    images: ["/images/ring-product-1.jpg", "/images/hero-ring.jpg", "/images/diamond-ring-2.jpg"],
+    images: ["/images/ring-product-1.jpg", "/jewelry-store.jpg", "/images/diamond-ring-2.jpg"],
     moreLink: "#",
   },
   {
     id: 2,
     title: "제목입니다",
-    images: ["/images/ring-product-2.jpg", "/images/diamond-ring-2.jpg", "/images/hero-ring.jpg"],
+    images: ["/images/ring-product-2.jpg", "/jewelry-store.jpg", "/images/jewelry-store.jpg"],
     moreLink: "#",
   },
 ]
@@ -69,9 +69,8 @@ export default function OnlineStorePage() {
               {index > 0 && <hr className="border-[#eef1f4]" />}
 
               <div
-                className={`flex flex-col ${
-                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                } items-start gap-8 py-12`}
+                className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  } items-start gap-8 py-12`}
               >
                 {/* Product Image */}
                 <div className="w-full md:w-[280px] flex-shrink-0">
