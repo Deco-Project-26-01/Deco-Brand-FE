@@ -78,29 +78,60 @@ export default function Header() {
                   ) : (
                     item.label
                   )}
+                  {item.submenu && (
+                    <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${openMenu === item.label ? "rotate-180" : ""}`} />
+                  )}
                 </button>
-
-                {item.submenu && openMenu === item.label && (
-                  <div
-                    className="absolute top-full left-0 mt-2 bg-[#ffffff] text-[#1a1a1a] rounded shadow-lg min-w-[160px] py-2 z-50"
-                    onMouseLeave={() => setOpenMenu(null)}
-                  >
-                    {item.submenu.map((sub) => (
-                      <Link
-                        key={sub.label}
-                        href={sub.href}
-                        className="block px-4 py-2 text-sm hover:bg-[#eef1f4] transition-colors"
-                        onClick={() => setOpenMenu(null)}
-                      >
-                        {sub.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
               </div>
             )
           })}
         </nav>
+
+        {/* Full-width mega dropdown */}
+        {navItems.map((item) =>
+          item.submenu && openMenu === item.label ? (
+            <div
+              key={item.label}
+              className="absolute top-full left-0 w-full bg-[#ffffff] text-[#1a1a1a] shadow-xl border-t border-[#eef1f4] z-50"
+              onMouseLeave={() => setOpenMenu(null)}
+            >
+              <div className="max-w-[1280px] mx-auto px-6 py-8">
+                <div className="flex gap-16">
+                  {/* Left: Section title */}
+                  <div className="min-w-[140px]">
+                    <h3 className="text-xs font-semibold text-[#7d7d7d] uppercase tracking-wider mb-4">
+                      {item.label}
+                    </h3>
+                    <Link
+                      href={item.href}
+                      className="text-sm text-[#004127] font-medium hover:underline"
+                      onClick={() => setOpenMenu(null)}
+                    >
+                      View All
+                    </Link>
+                  </div>
+
+                  {/* Right: Submenu items */}
+                  <div className="flex gap-10">
+                    {item.submenu.map((sub) => (
+                      <Link
+                        key={sub.label}
+                        href={sub.href}
+                        className="group flex flex-col items-start"
+                        onClick={() => setOpenMenu(null)}
+                      >
+                        <span className="text-base font-medium text-[#1a1a1a] group-hover:text-[#004127] transition-colors">
+                          {sub.label}
+                        </span>
+                        <span className="mt-1 h-0.5 w-0 bg-[#004127] group-hover:w-full transition-all duration-300" />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : null
+        )}
 
         {/* Right side */}
         <div className="flex items-center gap-4">
