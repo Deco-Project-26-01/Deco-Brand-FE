@@ -36,7 +36,7 @@ export default function Footer() {
               <span>Instagram</span>
             </Link>
             <Link href="#" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
-              <Whatsapp className="w-4 h-4" />
+              <Youtube className="w-4 h-4" />
               <span>Whatsapp</span>
             </Link>
           </div>
