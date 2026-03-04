@@ -32,14 +32,12 @@ const navItems = [
 export default function Header() {
   const pathname = usePathname()
   const [openMenu, setOpenMenu] = useState<string | null>(null)
-  const [langOpen, setLangOpen] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
       if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
         setOpenMenu(null)
-        setLangOpen(false)
       }
     }
     document.addEventListener("mousedown", handleClickOutside)
@@ -139,26 +137,10 @@ export default function Header() {
             <Search className="w-4 h-4" />
           </button>
 
-          {/* Language selector */}
-          <div className="relative">
-            <button
-              className="flex items-center gap-1 text-sm text-[#ffffff] hover:text-[#f1bc69] transition-colors cursor-pointer"
-              onClick={() => setLangOpen(!langOpen)}
-            >
-              EN
-              <ChevronDown className="w-3 h-3" />
-            </button>
-            {langOpen && (
-              <div className="absolute top-full right-0 mt-2 bg-[#ffffff] text-[#1a1a1a] rounded shadow-lg min-w-[80px] py-1 z-50">
-                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-[#eef1f4] cursor-pointer">
-                  EN
-                </button>
-                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-[#eef1f4] cursor-pointer">
-                  KR
-                </button>
-              </div>
-            )}
-          </div>
+          {/* Language indicator */}
+          <span className="text-sm text-[#ffffff]">
+            EN
+          </span>
 
           <a
             href="https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=showcase"
