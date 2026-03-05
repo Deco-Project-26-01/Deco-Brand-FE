@@ -13,7 +13,7 @@ export default function HomePage() {
         <section className="relative w-full">
           <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
             <Image
-              src="/images/decoindco_hkdtc2025.png"
+              src="/images/HKDTC2026.jpg"
               fill
               className="object-cover"
               priority
