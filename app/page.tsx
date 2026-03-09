@@ -72,7 +72,7 @@ export default function HomePage() {
             <div className="w-full md:w-[240px] flex-shrink-0">
               <div className="relative w-full h-[160px] overflow-hidden">
                 <Image
-                  src="/images/decoindcoltd_factory.jpg"
+                  src="/images/decoindcoltd_factory.JPG"
                   alt="Leather Goods"
                   fill
                   className="object-cover"
