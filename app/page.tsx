@@ -35,7 +35,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="flex-1">
-              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">Decoindco — Custom Jewellery Manufacturer in South Korea</h2>
+              <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">DECO IND CO., LTD. — Custom Jewellery Manufacturer in South Korea</h2>
               <div className="space-y-2">
                 <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
                 <div className="h-2.5 bg-[#cfcfcf] rounded-full w-full" />
@@ -43,7 +43,7 @@ export default function HomePage() {
                 <div className="h-2.5 bg-[#eef1f4] rounded-full w-[80%]" />
               </div>
               <Link href="#" className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors">
-                Since 1986, we export to 20+ countries like UAE,Hong Kong(China),India,Japan,USA
+                Since 1986, we export to 20+ countries like Dubai, Hong Kong, India,Japan ,USA
               </Link>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function HomePage() {
             <div className="w-full md:w-[240px] flex-shrink-0">
               <div className="relative w-full h-[160px] overflow-hidden">
                 <Image
-                  src="/images/jewelry-store.jpg"
+                  src="/images/decoindcoltd_fractory.jpg"
                   alt="Leather Goods"
                   fill
                   className="object-cover"
