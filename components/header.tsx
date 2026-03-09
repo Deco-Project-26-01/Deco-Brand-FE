@@ -48,15 +48,11 @@ export default function Header() {
     <header className="bg-[#004127] text-[#ffffff] relative z-50" ref={menuRef}>
       <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 h-16">
         {/* Logo */}
+        <Link href="/" className="text-[#ffffff] font-bold text-xl tracking-widest">
+          <Image>
 
-        <Image
-          src="/images/logo_white.png"
-          fill
-          className="object-cover"
-          priority>
-
-        </Image>
-
+          </Image>
+        </Link>
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center gap-8">
