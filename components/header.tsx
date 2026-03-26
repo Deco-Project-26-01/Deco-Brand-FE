@@ -10,7 +10,8 @@ const navItems = [
     label: "Company",
     href: "/company",
     submenu: [
-      { label: "How we work", href: "/company?tab=how we work" },
+      { label: "About us", href: "/company?tab=about-us" },
+      { label: "How we work", href: "/company?tab=how-we-work" },
       { label: "History", href: "/company?tab=history" },
       { label: "Contact", href: "/company?tab=contact" },
     ],
@@ -19,10 +20,8 @@ const navItems = [
     label: "Brand",
     href: "/brand",
     submenu: [
-
       { label: "Bracelets", href: "/brand?category=bracelets" },
       { label: "Necklaces", href: "/brand?category=necklaces" },
-
     ],
   },
   { label: "News", href: "/news" },
@@ -77,11 +76,7 @@ export default function Header() {
                     if (item.submenu) setOpenMenu(item.label)
                   }}
                 >
-                  {!item.submenu ? (
-                    <Link href={item.href}>{item.label}</Link>
-                  ) : (
-                    item.label
-                  )}
+                  <Link href={item.href}>{item.label}</Link>
                 </button>
               </div>
             )
