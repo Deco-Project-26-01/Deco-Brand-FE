@@ -130,7 +130,7 @@ function AboutContent() {
                     For nearly four decades, we have focused exclusively on fine gold jewelry manufacturing. Thanks to this long-term specialization, we have deep expertise in gold mounting quality, precision, and craftsmanship.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
-                    You can purchase our jewelry by contacting us directly for business inquiries. If you can&apos;t find a specific piece in the current selection, we will be happy to arrange a <a href="/company?tab=contact" className="text-[#004127] hover:underline"> custom order by email or whatsapp or an individual adjustment</a>.
+                    You can purchase our jewelry by contacting us directly for business inquiries. If you can&apos;t find a specific piece in the current selection, we will be happy to arrange a <a href="/company?tab=contact" className="text-[#004127] hover:underline"> custom order by email or WhatsApp or an individual adjustment</a>.
                   </p>
                 </section>
 
