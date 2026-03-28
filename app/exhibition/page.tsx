@@ -6,8 +6,12 @@ import { ArrowUp, Plus, Search, ChevronLeft, ChevronRight, ChevronsLeft, Chevron
 import { useState } from "react"
 
 const exhibitions = [
-  { id: 10, title: "2026 March Hong Kong International Jewelry Show", date: "2026.03.04", location: "HKCEC Hong Kong Convention and Exhibition Centre Hong Kong" },
-  { id: 9, title: "2025 Sep, JEWELLERY & GEM FAIR WORLD HONG KONG ", date: "15.09.2026 - 19.09.2026", location: "AsiaWorld-Expo & Hong Kong Convention and Exhibition Center" },
+  {
+    id: 10, title: "2026 March Hong Kong International Jewelry Show", date: "2026.03.04 - 2026.03.09", location: "HKCEC Hong Kong Convention and Exhibition Centre Hong Kong, wanchai", description: "Date:9.15.2026-9.19.2026, Location: Hong Kong AsiaWorld-Expo & Hong Kong Convention and Exhibition Center, Frequency: every year, Admittance type: traders only"
+  },
+  {
+    id: 9, title: "2025 Sep, JEWELLERY & GEM FAIR WORLD HONG KONG ", date: "15.09.2026 - 19.09.2026", location: "AsiaWorld-Expo & Hong Kong Convention and Exhibition Center"
+  },
   { id: 8, title: "2025 June Hong Kong Exhibition", date: "2025.05.09" },
   { id: 7, title: "2025 March HONG Kong Exhibition", date: "2025.03" },
   { id: 6, title: "2024 HONG KONG JEWELRY FAIR", date: "2024.07.20" },
@@ -73,23 +77,8 @@ export default function ExhibitionPage() {
                 </button>
                 {openItem === item.id && (
                   <div className="px-4 pb-5 text-sm text-[#4f4f4f] leading-relaxed">
-                    {item.title}
+                    {item.description}
 
-                    Data:
-                    9/15/2026-9/19/2026
-
-                    Location:
-                    Hong Kong -Hong Kong
-
-                    AsiaWorld-Expo & Hong Kong Convention and Exhibition Center
-
-                    https://jgw.exhibitions.jewellerynet.com/
-
-
-
-                    Frequency: every year
-
-                    Admittance type: traders only
                   </div>
                 )}
               </div>
