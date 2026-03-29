@@ -47,13 +47,14 @@ export default function Header() {
     <header className="bg-[#004127] text-[#ffffff] relative z-50" ref={menuRef}>
       <div className="max-w-[1280px] mx-auto flex items-center justify-between px-6 h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center w-[80px] h-[28px]">
           <Image
             src="/images/logo_white.png"
             alt="DECO"
             width={80}
             height={28}
             priority
+            className="w-[80px] h-[28px]"
           />
         </Link>
 
