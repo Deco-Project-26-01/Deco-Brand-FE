@@ -5,11 +5,11 @@ Deco Brand 회사소개의 Front-end 레포지토리
 
 
 ## Brand
-🟦 About Us
 
-### 회사 소개
+🟦 Company
 
 
+About us
 #### Nature of Business
 Exporter, Manufacturer
 
@@ -29,17 +29,18 @@ UAE,Hong Kong(China),India,Japan,USA
 
 품질 관리 방식
 
-👉 B2B 필수 신뢰 페이지
+🟦 Brand
 
-🟦 Contact
-문의 
-- 전화번호
-- 이메일
+🟦 News
+
+🟦 Exhibition
+
 <br>
 
-**Footer**
-- whatsapp
-- instagram
+
+
+- linkedin
+https://www.linkedin.com/in/sangho-k-36204b242/
 
 ### showcase
 https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=showcase
