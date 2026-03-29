@@ -28,7 +28,7 @@ export default function HomePage() {
               <div className="relative w-full h-[140px] overflow-hidden">
                 <Image
                   src="/images/kora_pavilion2012.jpg"
-                  alt="Jewelry Store"
+                  alt="KORA pavilion at a jewelry trade show"
                   fill
                   className="object-cover"
                 />
