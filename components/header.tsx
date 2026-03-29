@@ -88,21 +88,21 @@ export default function Header() {
               const isActive =
                 pathname === item.href || pathname.startsWith(item.href.split("?")[0])
               return (
-                <div key={item.label} className="relative">
-                  <button
-                    className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[#f1bc69] cursor-pointer ${isActive ? "text-[#f1bc69]" : "text-[#ffffff]"
-                      }`}
-                    onClick={() => {
-                      if (item.submenu) {
-                        setOpenMenu(openMenu === item.label ? null : item.label)
-                      }
-                    }}
-                    onMouseEnter={() => {
-                      if (item.submenu) setOpenMenu(item.label)
-                    }}
+                <div
+                  key={item.label}
+                  className="relative"
+                  onMouseEnter={() => {
+                    if (item.submenu) setOpenMenu(item.label)
+                  }}
+                >
+                  <Link
+                    href={item.href}
+                    className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[#f1bc69] cursor-pointer ${
+                      isActive ? "text-[#f1bc69]" : "text-[#ffffff]"
+                    }`}
                   >
-                    <Link href={item.href}>{item.label}</Link>
-                  </button>
+                    {item.label}
+                  </Link>
                 </div>
               )
             })}
