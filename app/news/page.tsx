@@ -9,12 +9,13 @@ import { Suspense, useState } from "react"
 import { ArrowUp, ChevronRight, Plus, X, Search } from "lucide-react"
 
 const newsItems = [
-  { id: 1, title: "Dubai Show 2026", image: "/images/conference.jpg" },
-  { id: 2, title: "LasVegas Jewellery Show 2026", image: "/images/conference.jpg" },
-  { id: 3, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/conference.jpg" },
-  { id: 4, title: "$5 million Export Tower , 2004", image: "/images/5mtop.jpg" },
-  { id: 5, title: "$10 million Export Tower ,2010", image: "/images/1ktop.jpg" },
-  { id: 6, title: "$30 million Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
+  { id: 1, title: "$5 million Export Tower , 2004", image: "/images/5mtop.jpg" },
+  { id: 2, title: "$10 million Export Tower ,2010", image: "/images/1ktop.jpg" },
+  { id: 3, title: "$30 million Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
+  { id: 4, title: "Dubai Show 2026", image: "/images/conference.jpg" },
+  { id: 5, title: "LasVegas Jewellery Show 2026", image: "/images/conference.jpg" },
+  { id: 6, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/conference.jpg" },
+
 ]
 
 const noticeItems = [
@@ -169,7 +170,7 @@ function NewsContent() {
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
                 {paginatedNews.map((item) => (
                   <article key={item.id} className="group cursor-pointer">
-                    <div className="relative w-full h-[360px] overflow-hidden mb-3">
+                    <div className="relative w-full h-[450px] overflow-hidden mb-3">
                       <Image
                         src={item.image}
                         alt={item.title}
@@ -190,8 +191,8 @@ function NewsContent() {
                 <button
                   onClick={() => setCurrentPage(1)}
                   className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${currentPage === 1
-                      ? "bg-[#004127] text-[#ffffff]"
-                      : "text-[#7d7d7d] hover:text-[#1a1a1a]"
+                    ? "bg-[#004127] text-[#ffffff]"
+                    : "text-[#7d7d7d] hover:text-[#1a1a1a]"
                     }`}
                 >
                   1
@@ -199,8 +200,8 @@ function NewsContent() {
                 <button
                   onClick={() => setCurrentPage(2)}
                   className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${currentPage === 2
-                      ? "bg-[#004127] text-[#ffffff]"
-                      : "text-[#7d7d7d] hover:text-[#1a1a1a]"
+                    ? "bg-[#004127] text-[#ffffff]"
+                    : "text-[#7d7d7d] hover:text-[#1a1a1a]"
                     }`}
                 >
                   2
