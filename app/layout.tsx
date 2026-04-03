@@ -6,11 +6,14 @@ import './globals.css'
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: 'DECO',
+  title: 'DECO Jewelry',
   description: 'DECO INDCO LTD Korean Jewelry',
   icons: {
-    icon: '/favicon.png',
-
+    icon: [
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
 }
 
