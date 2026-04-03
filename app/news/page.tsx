@@ -12,8 +12,8 @@ const newsItems = [
   { id: 1, title: "Dubai Show 2026", image: "/images/conference.jpg" },
   { id: 2, title: "LasVegas Jewellery Show 2026", image: "/images/conference.jpg" },
   { id: 3, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/conference.jpg" },
-  { id: 4, title: "JCK Show Las Vegas 2026", image: "/images/conference.jpg" },
-  { id: 5, title: "$5 million Export Tower ,2004", image: "/images/conference.jpg" },
+  { id: 4, title: "$5 million Export Tower , 2004", image: "/images/5mtop.jpg" },
+  { id: 5, title: "$10 million Export Tower ,2010", image: "/images/1ktop.jpg" },
   { id: 6, title: "$30 million Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
 ]
 
@@ -187,27 +187,25 @@ function NewsContent() {
 
               {/* Pagination for News - 2 pages only */}
               <div className="flex items-center justify-center gap-2 pb-12">
-                <button 
+                <button
                   onClick={() => setCurrentPage(1)}
-                  className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${
-                    currentPage === 1 
-                      ? "bg-[#004127] text-[#ffffff]" 
+                  className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${currentPage === 1
+                      ? "bg-[#004127] text-[#ffffff]"
                       : "text-[#7d7d7d] hover:text-[#1a1a1a]"
-                  }`}
+                    }`}
                 >
                   1
                 </button>
-                <button 
+                <button
                   onClick={() => setCurrentPage(2)}
-                  className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${
-                    currentPage === 2 
-                      ? "bg-[#004127] text-[#ffffff]" 
+                  className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${currentPage === 2
+                      ? "bg-[#004127] text-[#ffffff]"
                       : "text-[#7d7d7d] hover:text-[#1a1a1a]"
-                  }`}
+                    }`}
                 >
                   2
                 </button>
-                <button 
+                <button
                   onClick={() => setCurrentPage(Math.min(currentPage + 1, totalPages))}
                   className="w-8 h-8 flex items-center justify-center text-[#7d7d7d] hover:bg-[#004127] hover:text-[#ffffff] active:bg-[#004127] active:text-[#ffffff] rounded transition-colors cursor-pointer"
                 >
