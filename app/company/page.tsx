@@ -200,13 +200,15 @@ function AboutContent() {
                     <p>Republic of Korea</p>
                   </div>
                   <div className="flex justify-center">
-                    <Image
-                      src="/images/factory.png"
-                      alt="Deco Ind Co Ltd Factory"
-                      width={600}
-                      height={450}
-                      className="rounded"
-                    />
+                    <div className="relative w-[600px] h-[380px] overflow-hidden rounded">
+                      <Image
+                        src="/images/factory.png"
+                        alt="Deco Ind Co Ltd Factory"
+                        fill
+                        className="object-cover object-center"
+                        style={{ objectPosition: '50% 50%' }}
+                      />
+                    </div>
                   </div>
                 </section>
               </div>
