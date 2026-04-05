@@ -38,9 +38,9 @@ export default function Footer() {
               <Linkedin className="w-4 h-4" />
               <span>LinkedIn</span>
             </a>
-            <a href="https://decoindco.tradekorea.com/main.do" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
+            <a href="https://buykorea.org/ec/prd/selectSvcDetail.do?goodsSn=3602010" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
               <Instagram className="w-4 h-4" />
-              <span>TradeKorea</span>
+              <span>buyKOREA</span>
             </a>
             <a href="https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
               <Youtube className="w-4 h-4" />
