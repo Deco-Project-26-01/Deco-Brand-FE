@@ -193,22 +193,11 @@ function AboutContent() {
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
                     You can contact us by mail and whatsapp below. We deliver quickly and securely via trusted carriers , FEDEX and DHL worldwide.
                   </p>
-                  <div className="text-sm text-[#1a1a1a] leading-relaxed mb-6">
+                  <div className="text-sm text-[#1a1a1a] leading-relaxed">
                     <p className="font-semibold">Deco Ind Co Ltd Factory</p>
                     <p>215-8, Seonhwa-ro 63-gil</p>
                     <p>Iksan-city, Jeollabuk-do</p>
                     <p>Republic of Korea</p>
-                  </div>
-                  <div className="flex justify-center">
-                    <div className="relative w-[600px] h-[380px] overflow-hidden rounded">
-                      <Image
-                        src="/images/factory.png"
-                        alt="Deco Ind Co Ltd Factory"
-                        fill
-                        className="object-cover object-center"
-                        style={{ objectPosition: '50% 50%' }}
-                      />
-                    </div>
                   </div>
                 </section>
               </div>
