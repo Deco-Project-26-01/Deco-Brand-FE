@@ -127,12 +127,7 @@ function NewsContent() {
                       className="w-full grid grid-cols-[80px_1fr_120px] items-center py-4 px-4 text-left cursor-pointer hover:bg-[#f9f9f9] transition-colors"
                     >
                       <span className="text-sm text-[#7d7d7d] text-center">{item.id}</span>
-                      <span className="text-sm text-[#1a1a1a] flex items-center gap-2">
-                        {item.badge && (
-                          <span className="bg-[#7d7d7d] text-[#ffffff] text-xs px-2 py-0.5 rounded">
-                            {item.badge}
-                          </span>
-                        )}
+                      <span className="text-sm text-[#1a1a1a]">
                         {item.title}
                       </span>
                       <span className="text-sm text-[#7d7d7d] text-center">{item.date}</span>
