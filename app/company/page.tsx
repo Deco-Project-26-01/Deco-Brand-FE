@@ -63,7 +63,7 @@ function AboutContent() {
                   Contact
                 </h2>
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>WhatsApp: <a href="" className="text-[#004127] underline"></a></li>
+                  <li>WhatsApp: +821027284255 <a href="" className="text-[#004127] underline"></a></li>
                   <li>Business E-mail: </li>
                 </ul>
                 <hr className="my-6 border-[#cfcfcf]" />
@@ -191,14 +191,15 @@ function AboutContent() {
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Where to find us</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    You can contact us by mail and whatsapp below. We deliver quickly and securely via trusted carriers , FEDEX and DHL worldwide.
+                    You can contact us by mail and whatsapp below. We deliver quickly and securely via trusted carriers ,FEDEX and DHL worldwide.
                   </p>
-                  <div className="text-sm text-[#1a1a1a] leading-relaxed mb-6">
+                  <div className="text-sm text-[#1a1a1a] leading-relaxed">
                     <p className="font-semibold">Deco Ind Co Ltd Factory</p>
                     <p>215-8, Seonhwa-ro 63-gil</p>
                     <p>Iksan-city, Jeollabuk-do</p>
                     <p>Republic of Korea</p>
                   </div>
+
                   <div className="flex justify-center">
                     <Image
                       src="/images/factory.png"
@@ -208,6 +209,7 @@ function AboutContent() {
                       className="rounded"
                     />
                   </div>
+
                 </section>
               </div>
             ) : (
