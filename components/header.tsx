@@ -25,7 +25,14 @@ const navItems = [
       { label: "Necklaces", href: "/brand?category=necklaces" },
     ],
   },
-  { label: "News", href: "/news" },
+  {
+    label: "News",
+    href: "/news",
+    submenu: [
+      { label: "News", href: "/news?tab=news" },
+      { label: "Notice", href: "/news?tab=notice" },
+    ],
+  },
   { label: "Exhibition", href: "/exhibition" },
 ]
 
