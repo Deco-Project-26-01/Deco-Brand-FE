@@ -19,7 +19,7 @@ function BrandContent() {
   ]
 
   const heroImages: Record<string, string> = {
-    necklace: "/images/hand-rings.jpg",
+    necklace: "/images/necklace-hero.jpg",
     bracelets: "/images/bracelets-hero.jpg",
     earrings: "/images/earrings-hero.jpg",
   }
