@@ -24,7 +24,7 @@ const noticeItems = [
       "https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile"
   },
   { id: 2, title: "Deco Offical website OPEN!", date: "2026.03.30", details: "* Seoul Office hour (Closed on weekends and Korean public holidays" },
-  { id: 3, title: "Company Website Renewal", date: "2025.04.03", details: "B2B CATALOG STORE OPEN 예정" },
+  { id: 3, title: "Company Website Renewal", date: "2025.04.13", details: "B2B CATALOG STORE OPEN 예정" },
 
 ]
 
