@@ -139,7 +139,18 @@ function NewsContent() {
                             <span className="text-sm font-bold text-[#9b7b4f] block mb-1">{item.id}</span>
                             <h3 className="text-base font-medium text-[#1a1a1a] mb-1">{item.title}</h3>
                             <span className="text-xs text-[#7d7d7d] block mb-4">{item.date}</span>
-                            <p className="text-sm text-[#4f4f4f] leading-relaxed">{item.details}</p>
+                            {item.details.startsWith("http") ? (
+                              <a
+                                href={item.details}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-sm text-[#004127] underline hover:text-[#9b7b4f] transition-colors break-all"
+                              >
+                                {item.details}
+                              </a>
+                            ) : (
+                              <p className="text-sm text-[#4f4f4f] leading-relaxed">{item.details}</p>
+                            )}
                           </div>
                           <button
                             onClick={(e) => {
