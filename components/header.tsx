@@ -23,6 +23,7 @@ const navItems = [
     submenu: [
       { label: "Bracelets", href: "/brand?category=bracelets" },
       { label: "Necklaces", href: "/brand?category=necklaces" },
+      { label: "Earrings", href: "/brand?category=earrings" },
     ],
   },
   {

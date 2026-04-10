@@ -15,7 +15,16 @@ function BrandContent() {
   const categories = [
     { id: "necklace", label: "Necklace" },
     { id: "bracelets", label: "Bracelets" },
+    { id: "earrings", label: "Earrings" },
   ]
+
+  const heroImages: Record<string, string> = {
+    necklace: "/images/hand-rings.jpg",
+    bracelets: "/images/hand-rings.jpg",
+    earrings: "/images/earrings-hero.jpg",
+  }
+
+  const currentHeroImage = heroImages[category] || "/images/hand-rings.jpg"
 
   return (
     <div className="min-h-screen flex flex-col bg-[#ffffff]">
@@ -43,7 +52,7 @@ function BrandContent() {
         {/* Hero Image */}
         <section className="relative w-full h-[500px] md:h-[600px]">
           <Image
-            src="/images/hand-rings.jpg"
+            src={currentHeroImage}
             alt="Brand Collection"
             fill
             className="object-cover"
