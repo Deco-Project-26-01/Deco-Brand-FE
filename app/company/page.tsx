@@ -193,8 +193,10 @@ function AboutContent() {
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Where to find us</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    You can contact us by mail and whatsapp below. We deliver quickly and securely via trusted carriers ,FEDEX and DHL worldwide.
+                    You can contact us by mail and whatsapp below. We deliver quickly and securely via trusted carriers, Brinks, FEDEX and DHL worldwide.
                   </p>
+
+                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Factory</h3>
                   <div className="text-sm text-[#1a1a1a] leading-relaxed">
                     <p className="font-semibold">Deco Ind Co Ltd Factory</p>
                     <p>215-8, Seonhwa-ro 63-gil</p>
