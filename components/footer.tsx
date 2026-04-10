@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Linkedin, Instagram, Youtube } from "lucide-react"
+import { Linkedin, Instagram } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
 import Image from "next/image"
 
 export default function Footer() {
@@ -42,9 +43,9 @@ export default function Footer() {
               <Instagram className="w-4 h-4" />
               <span>buyKOREA</span>
             </a>
-            <a href="https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
-              <Youtube className="w-4 h-4" />
-              <span>HKTDC</span>
+            <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
+              <FaWhatsapp className="w-4 h-4" />
+              <span>Whatsapp</span>
             </a>
           </div>
         </div>
