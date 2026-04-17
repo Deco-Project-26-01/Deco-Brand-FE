@@ -73,7 +73,12 @@ function AboutContent() {
                   <li>Tel: +82-2-747-0908(Sales)</li>
                   <li>Tel: +82-63-833-8435 (Factory)</li>
                 </ul>
+
                 <hr className="my-6 border-[#cfcfcf]" />
+
+                <h2 className="text-xl font-semibold text-[#1a1a1a] mb-8">
+                  Factory
+                </h2>
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
                   <li>Address: 215-8, Seonhwa-ro 63-gil, Iksan-city, Jeollabuk-do, Republic of Korea</li>
                 </ul>
