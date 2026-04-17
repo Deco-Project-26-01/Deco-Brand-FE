@@ -9,9 +9,9 @@ import { Suspense, useState } from "react"
 import { ArrowUp, ChevronRight, Plus, X, Search } from "lucide-react"
 
 const newsItems = [
-  { id: 1, title: "$5 million Export Tower , 2004", image: "/images/5mtop.jpg" },
-  { id: 2, title: "$10 million Export Tower ,2010", image: "/images/1ktop.jpg" },
-  { id: 3, title: "$30 million Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
+  { id: 1, title: "5 million$ Export Tower , 2004", image: "/images/5mtop.jpg" },
+  { id: 2, title: "10 million$ Export Tower ,2010", image: "/images/1ktop.jpg" },
+  { id: 3, title: "30 million$ Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
   { id: 4, title: "Dubai Show 2026 Feb. ", image: "/images/dubai.jpeg" },
   { id: 5, title: "Hongkong Jewellery Show 2026 March", image: "/images/hktdc.png" },
   { id: 6, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/jewellery-gem-expo.png" },
