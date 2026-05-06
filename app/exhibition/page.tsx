@@ -10,7 +10,7 @@ const exhibitions = [
     id: 1, title: "2026 March Hong Kong International Jewelry Show", date: "2026.03.04 - 2026.03.09", location: "HKCEC Hong Kong Convention and Exhibition Centre Hong Kong, wanchai", description: "Date:9.15.2026-9.19.2026, Location: Hong Kong AsiaWorld-Expo & Hong Kong Convention and Exhibition Center, Frequency: every year, Admittance type: traders only"
   },
   {
-    id: 2, title: "2026 May, LasVegas JCK show", date: "   May 29 - June 1, 2026", location: "Las vegas, NV", description: "Location: the Venetian Expo"
+    id: 2, title: "2026 May, LasVegas JCK show", date: "   May 29 - June 1, 2026", location: "Las vegas, NV", description: "Location: the Venetian Expo, Stand 43022"
   },
   {
     id: 3, title: "2026 Sep, JEWELLERY & GEM FAIR WORLD HONG KONG ", date: "15.09.2026 - 19.09.2026", location: "AsiaWorld-Expo & Hong Kong Convention and Exhibition Center"
