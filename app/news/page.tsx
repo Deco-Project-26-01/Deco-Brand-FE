@@ -34,8 +34,8 @@ function NewsContent() {
   const [openItem, setOpenItem] = useState<number | null>(null)
   const [searchQuery, setSearchQuery] = useState("")
   const [currentPage, setCurrentPage] = useState(1)
-  const itemsPerPage = 3
-  const totalPages = 2
+  const itemsPerPage = 6
+  const totalPages = 10
 
   // Paginated news items
   const paginatedNews = newsItems.slice(
