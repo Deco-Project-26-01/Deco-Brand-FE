@@ -13,7 +13,7 @@ export default function HomePage() {
         <section className="relative w-full">
           <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden">
             <Image
-              src="/images/Imagine.jpg"
+              src="/images/HKDTC2026.jpg"
               alt="HKTDC Hong Kong International Jewellery Show 2026"
               fill
               className="object-cover"
