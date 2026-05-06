@@ -77,13 +77,17 @@ export default function HomePage() {
               <div className="relative w-full h-[160px] overflow-hidden">
                 <Image
                   src="/images/decoindcoltd_factory.JPG"
-                  alt="Leather Goods"
+                  alt="ceo"
                   fill
                   className="object-cover"
                 />
               </div>
+
+
             </div>
+
           </div>
+          <p className="inline-block mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors"> CEO : KIM KISEONG, LEE KWANYOUNG</p>
         </section>
       </main>
 
