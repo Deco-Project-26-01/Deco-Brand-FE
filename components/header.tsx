@@ -105,9 +105,8 @@ export default function Header() {
                 >
                   <Link
                     href={item.href}
-                    className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[#f1bc69] cursor-pointer ${
-                      isActive ? "text-[#f1bc69]" : "text-[#ffffff]"
-                    }`}
+                    className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-[#f1bc69] cursor-pointer ${isActive ? "text-[#f1bc69]" : "text-[#ffffff]"
+                      }`}
                   >
                     {item.label}
                   </Link>
@@ -165,13 +164,13 @@ export default function Header() {
               EN
             </span>
             <a
-              href=""
+              href="https://deco-store-fe-production.up.railway.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#ffffff] text-[#004127] text-xs font-semibold px-4 py-2 rounded hover:bg-[#eef1f4] transition-colors"
             >
-              B2B Store open 예정 
-            </a> 
+              B2B catalog
+            </a>
           </div>
 
           {/* Hamburger Menu Button - Mobile */}
