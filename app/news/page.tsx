@@ -37,6 +37,12 @@ function NewsContent() {
   const itemsPerPage = 6
   const totalPages = 5
 
+  // Paginated news items - must be defined before useEffect that references it
+  const paginatedNews = newsItems.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  )
+
   // Track loaded images for synchronized display
   const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set())
   const [allImagesReady, setAllImagesReady] = useState(false)
@@ -61,12 +67,6 @@ function NewsContent() {
       return newSet
     })
   }, [])
-
-  // Paginated news items
-  const paginatedNews = newsItems.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
-  )
 
   const tabs = [
     { id: "news", label: "News" },
