@@ -36,7 +36,8 @@ const navItems = [
   },
   {
     label: "Exhibition", href: "/exhibition",
-    submenu: [{ label: "Exhibition", href: "/exhibition" }]
+    submenu: [
+      { label: "Exhibition", href: "/exhibition" }]
   },
 ]
 
