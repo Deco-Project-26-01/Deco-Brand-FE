@@ -42,14 +42,14 @@ function AboutContent() {
           </h1>
 
           {/* Tabs */}
-          <div className="flex w-full mb-10">
+          <div className="flex gap-2 mb-10">
             {tabs.map((tab) => (
               <a
                 key={tab.id}
                 href={`/company?tab=${tab.id}`}
-                className={`flex-1 text-center px-3 py-2 text-sm font-medium border transition-colors ${activeTab === tab.id
-                  ? "bg-[#004127] text-[#ffffff] border-[#004127] rounded"
-                  : "bg-[#ffffff] text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127] rounded"
+                className={`px-4 py-2 text-sm font-medium border transition-colors ${activeTab === tab.id
+                  ? "bg-[#004127] text-[#ffffff] border-[#004127]"
+                  : "bg-[#ffffff] text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127]"
                   }`}
               >
                 {tab.label}
@@ -65,13 +65,14 @@ function AboutContent() {
                   Contact
                 </h2>
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>WhatsApp: +821027284255 <a href="" className="text-[#004127] underline"></a></li>
+                  <li>WhatsApp: +82-10-2728-4255 <a href="" className="text-[#004127] underline"></a></li>
                   <li>Business E-mail: </li>
                 </ul>
                 <hr className="my-6 border-[#cfcfcf]" />
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>Tel: +82-2-747-0908(Sales)</li>
-                  <li>Tel: +82-63-833-8435 (Factory)</li>
+                  <li>Tel: </li>
+                  <li>Sales: +82-2-747-0908</li>
+                  <li>Factory: +82-63-833-8435</li>
                 </ul>
 
                 <hr className="my-6 border-[#cfcfcf]" />
@@ -163,7 +164,7 @@ function AboutContent() {
                     We work exclusively with high-quality gold materials, including 10k gold, 14k gold, and 18k gold. All materials are carefully selected and sourced from trusted suppliers.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Our jewelry is manufactured in our own factory in South Korea, ensuring full control over quality and precision. We work with long-standing, carefully vetted international partners for distribution.
+                    Our jewelry is manufactured in our own factory in South Korea, ensuring full control over quality and precision. We work with long-standing, carefully vetted international partners .
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
                     We do not engage in mass production. Even our more accessible pieces are not anonymous stock items - each one is carefully crafted and assembled by skilled artisans.

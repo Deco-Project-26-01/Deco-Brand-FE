@@ -23,8 +23,8 @@ const noticeItems = [
     id: 1, title: "2026 March Hong Kong International Jewelry ShowCase", date: "2026.03.04", details:
       "https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile"
   },
-  { id: 2, title: "Deco Offical website OPEN!", date: "2026.03.30", details: "* made by Jung Jinwook ,SanghoKim & Leesangwoo, Seoul Office hour (Closed on weekends and Korean public holidays" },
-  { id: 3, title: "Company Website Renewal", date: "2025.04.20", details: "B2B CATALOG STORE OPEN 예정 " },
+  { id: 2, title: "Deco Offical website OPEN!", date: "2026.03.30", details: "* made by Jung Jinwook,Kim Sangho & Leesangwoo, Seoul Office hour (Closed on weekends and Korean public holidays)" },
+
 
 ]
 
@@ -73,9 +73,15 @@ function NewsContent() {
     { id: "notice", label: "Notice" },
   ]
 
-  const filteredNotices = noticeItems.filter((item) =>
-    item.title.toLowerCase().includes(searchQuery.toLowerCase())
-  )
+  const filteredNotices = noticeItems
+    .filter((item) =>
+      item.title.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+    .sort((a, b) => {
+      const dateA = new Date(a.date.replace(/\./g, "-")).getTime()
+      const dateB = new Date(b.date.replace(/\./g, "-")).getTime()
+      return dateB - dateA
+    })
 
   return (
     <div className="min-h-screen flex flex-col bg-[#ffffff]">
@@ -138,8 +144,8 @@ function NewsContent() {
               <div className="border-t-2 border-b border-[#1a1a1a] bg-[#f9f9f9]">
                 <div className="grid grid-cols-[80px_1fr_120px] py-3 px-4 text-sm font-semibold text-[#1a1a1a]">
                   <span className="text-center">NO</span>
-                  <span className="text-center">제목</span>
-                  <span className="text-center">등록일자</span>
+                  <span className="text-center">Title</span>
+                  <span className="text-center">Date</span>
                 </div>
               </div>
 
@@ -210,9 +216,8 @@ function NewsContent() {
                         src={item.image}
                         alt={item.title}
                         fill
-                        className={`object-cover group-hover:scale-105 transition-all duration-300 ${
-                          allImagesReady ? "opacity-100" : "opacity-0"
-                        }`}
+                        className={`object-cover group-hover:scale-105 transition-all duration-300 ${allImagesReady ? "opacity-100" : "opacity-0"
+                          }`}
                         onLoad={() => handleImageLoad(item.id)}
                         {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
                       />
@@ -246,12 +251,7 @@ function NewsContent() {
                     : "text-[#7d7d7d] hover:text-[#1a1a1a]"
                     }`}
                 >
-                  2
-                </button>
-                <button
-                  onClick={() => setCurrentPage(Math.min(currentPage + 1, totalPages))}
-                  className="w-8 h-8 flex items-center justify-center text-[#7d7d7d] hover:bg-[#004127] hover:text-[#ffffff] active:bg-[#004127] active:text-[#ffffff] rounded transition-colors cursor-pointer"
-                >
+
                   <ChevronRight className="w-5 h-5" strokeWidth={3} />
                 </button>
               </div>
