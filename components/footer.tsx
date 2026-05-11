@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Linkedin, Instagram } from "lucide-react"
+import { FaAddressCard } from "react-icons/fa"
 import { FaWhatsapp } from "react-icons/fa"
 import Image from "next/image"
 
@@ -40,7 +41,7 @@ export default function Footer() {
               <span>LinkedIn</span>
             </a>
             <a href="https://buykorea.org/ec/prd/selectSvcDetail.do?goodsSn=3602010" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
-              <Instagram className="w-4 h-4" />
+              <FaAddressCard className="w-4 h-4" />
               <span>buyKOREA</span>
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer" className="text-[#7d7d7d] hover:text-[#ffffff] transition-colors flex items-center gap-1 text-xs">
