@@ -73,9 +73,15 @@ function NewsContent() {
     { id: "notice", label: "Notice" },
   ]
 
-  const filteredNotices = noticeItems.filter((item) =>
-    item.title.toLowerCase().includes(searchQuery.toLowerCase())
-  )
+  const filteredNotices = noticeItems
+    .filter((item) =>
+      item.title.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+    .sort((a, b) => {
+      const dateA = new Date(a.date.replace(/\./g, "-")).getTime()
+      const dateB = new Date(b.date.replace(/\./g, "-")).getTime()
+      return dateB - dateA
+    })
 
   return (
     <div className="min-h-screen flex flex-col bg-[#ffffff]">
