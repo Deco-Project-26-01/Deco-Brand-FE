@@ -42,14 +42,14 @@ function AboutContent() {
           </h1>
 
           {/* Tabs */}
-          <div className="flex w-full mb-10">
+          <div className="flex gap-2 mb-10">
             {tabs.map((tab) => (
               <a
                 key={tab.id}
                 href={`/company?tab=${tab.id}`}
-                className={`flex-1 text-center px-3 py-2 text-sm font-medium border transition-colors ${activeTab === tab.id
-                  ? "bg-[#004127] text-[#ffffff] border-[#004127] rounded"
-                  : "bg-[#ffffff] text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127] rounded"
+                className={`px-4 py-2 text-sm font-medium border transition-colors ${activeTab === tab.id
+                  ? "bg-[#004127] text-[#ffffff] border-[#004127]"
+                  : "bg-[#ffffff] text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127]"
                   }`}
               >
                 {tab.label}
