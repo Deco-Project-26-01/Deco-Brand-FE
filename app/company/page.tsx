@@ -106,7 +106,7 @@ function AboutContent() {
                   <li>WhatsApp: +82-10-2728-4255 <a href="" className="text-[#004127] underline"></a></li>
                   <li>Business E-mail: </li>
                 </ul>
-
+                <br></br>
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
                   <li>Tel: </li>
                   <li>Sales: +82-2-747-0908</li>
@@ -309,8 +309,8 @@ function AboutContent() {
                       key={page}
                       onClick={() => setCertPage(page)}
                       className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${certPage === page
-                          ? "bg-[#004127] text-[#ffffff]"
-                          : "text-[#7d7d7d] hover:text-[#1a1a1a]"
+                        ? "bg-[#004127] text-[#ffffff]"
+                        : "text-[#7d7d7d] hover:text-[#1a1a1a]"
                         }`}
                     >
                       {page}
