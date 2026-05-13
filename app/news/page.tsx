@@ -9,12 +9,12 @@ import { Suspense, useState, useEffect, useCallback } from "react"
 import { ArrowUp, ChevronRight, Plus, X, Search } from "lucide-react"
 
 const newsItems = [
-  { id: 1, title: "5 million$ Export Tower , 2004", image: "/images/5mtop.jpg" },
-  { id: 2, title: "10 million$ Export Tower ,2010", image: "/images/1ktop.jpg" },
-  { id: 3, title: "30 million$ Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
-  { id: 4, title: "Dubai Show 2026 Feb. ", image: "/images/dubai.jpeg" },
-  { id: 5, title: "Hongkong Jewellery Show 2026 March", image: "/images/HKDTC2026.jpg" },
-  { id: 6, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/jewellery-gem-expo.png" },
+
+  { id: 1, title: "10 million$ Export Tower ,2010", image: "/images/1ktop.jpg" },
+  { id: 2, title: "30 million$ Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
+  { id: 3, title: "Dubai Show 2026 Feb. ", image: "/images/dubai.jpeg" },
+  { id: 4, title: "Hongkong Jewellery Show 2026 March", image: "/images/HKDTC2026.jpg" },
+  { id: 5, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/jewellery-gem-expo.png" },
 
 ]
 
@@ -23,7 +23,7 @@ const noticeItems = [
     id: 1, title: "2026 March Hong Kong International Jewelry ShowCase", date: "2026.03.04", details:
       "https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=profile"
   },
-  { id: 2, title: "Deco Offical website OPEN!", date: "2026.03.30", details: "* made by Jung Jinwook ,SanghoKim & Leesangwoo, Seoul Office hour (Closed on weekends and Korean public holidays)" },
+  { id: 2, title: "JCK Las Vegas Show", date: "2026.05.29", details: "https://lasvegas.jckonline.com/en-us/about/exhibitor-directory/exhibitor-details.deco%20ind%20co%20ltd.org-0ee9678f-36bb-4160-94d9-89a8cf5b8015.html" },
 
 
 ]
@@ -170,14 +170,14 @@ function NewsContent() {
                             <span className="text-sm font-bold text-[#9b7b4f] block mb-1">{item.id}</span>
                             <h3 className="text-base font-medium text-[#1a1a1a] mb-1">{item.title}</h3>
                             <span className="text-xs text-[#7d7d7d] block mb-4">{item.date}</span>
-                            {item.details.startsWith("http") ? (
+                            {item.details.trim().startsWith("http") ? (
                               <a
-                                href={item.details}
+                                href={item.details.trim()}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-sm text-[#004127] underline hover:text-[#9b7b4f] transition-colors break-all"
                               >
-                                {item.details}
+                                {item.details.trim()}
                               </a>
                             ) : (
                               <p className="text-sm text-[#4f4f4f] leading-relaxed">{item.details}</p>

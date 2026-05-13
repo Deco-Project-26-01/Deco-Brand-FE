@@ -11,7 +11,6 @@ const navItems = [
     label: "Company",
     href: "/company",
     submenu: [
-      { label: "About us", href: "/company?tab=about-us" },
       { label: "How we work", href: "/company?tab=how-we-work" },
       { label: "History", href: "/company?tab=history" },
       { label: "Certificates", href: "/company?tab=certificates" },
@@ -169,7 +168,7 @@ export default function Header() {
               EN
             </span>
             <a
-              href="https://deco-store-fe-production.up.railway.app/"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#ffffff] text-[#004127] text-xs font-semibold px-4 py-2 rounded hover:bg-[#eef1f4] transition-colors"
