@@ -255,7 +255,7 @@ function AboutContent() {
                     You can contact us by mail and whatsapp <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> <br></br> We deliver quickly and securely via trusted carriers, worldwide. Modes of Transport : CIF,FOB
                   </p>
 
-                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Factory</h3>
+
                   <div className="text-sm text-[#1a1a1a] leading-relaxed">
                     <p className="font-semibold">📍Location</p>
                     <p>215-8, Seonhwa-ro 63-gil</p>
