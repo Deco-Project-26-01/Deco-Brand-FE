@@ -20,9 +20,8 @@ https://www.linkedin.com/company/decoindco
 https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=showcase
 
 <hr>
-매출 25년 회계결산 기준 345억
 
-### 보완사항 2026 May JCK show
+### 2026 May JCK show
 
 
 AS-IS 대부분 사이트내용:
@@ -37,5 +36,4 @@ TO-BE: 반드시 들어가야 할 것
 -인증
 2. 생산 capability
 - 월 생산량
-- 리드타임
 - MOQ
