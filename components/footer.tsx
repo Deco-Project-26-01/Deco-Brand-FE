@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin,  } from "lucide-react"
+import { Linkedin, Instagram } from "lucide-react"
 import { FaAddressCard } from "react-icons/fa"
 import { FaWhatsapp } from "react-icons/fa"
 import Image from "next/image"

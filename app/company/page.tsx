@@ -4,9 +4,15 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import BreadcrumbNav from "@/components/breadcrumb-nav"
 import { useSearchParams } from "next/navigation"
-import { Suspense } from "react"
-import { ArrowUp } from "lucide-react"
+import { Suspense, useState, useEffect, useCallback } from "react"
+import { ArrowUp, ChevronRight } from "lucide-react"
 import Image from "next/image"
+
+const certificateItems = [
+  { id: 1, title: "Certificate", image: "/images/conference.jpg" },
+  { id: 2, title: "Certificate", image: "/images/conference.jpg" },
+  { id: 3, title: "Certificate", image: "/images/conference.jpg" },
+]
 
 function AboutContent() {
   const searchParams = useSearchParams()
@@ -14,10 +20,42 @@ function AboutContent() {
   const rawTab = searchParams.get("tab") || "about us"
   const activeTab = rawTab.replace(/-/g, " ")
 
+  const [certPage, setCertPage] = useState(1)
+  const certItemsPerPage = 3
+  const certTotalPages = Math.ceil(certificateItems.length / certItemsPerPage)
+  const paginatedCerts = certificateItems.slice(
+    (certPage - 1) * certItemsPerPage,
+    certPage * certItemsPerPage
+  )
+
+  // Synchronized image loading for certificates
+  const [loadedCertImages, setLoadedCertImages] = useState<Set<number>>(new Set())
+  const [allCertImagesReady, setAllCertImagesReady] = useState(false)
+
+  useEffect(() => {
+    setLoadedCertImages(new Set())
+    setAllCertImagesReady(false)
+  }, [certPage])
+
+  useEffect(() => {
+    if (loadedCertImages.size === paginatedCerts.length && paginatedCerts.length > 0) {
+      setAllCertImagesReady(true)
+    }
+  }, [loadedCertImages, paginatedCerts.length])
+
+  const handleCertImageLoad = useCallback((id: number) => {
+    setLoadedCertImages(prev => {
+      const newSet = new Set(prev)
+      newSet.add(id)
+      return newSet
+    })
+  }, [])
+
   const tabs = [
     { id: "about us", label: "About us" },
     { id: "how we work", label: "How we work" },
     { id: "history", label: "History" },
+    { id: "certificates", label: "Certificates" },
     { id: "contact", label: "Contact" },
   ]
 
@@ -68,7 +106,7 @@ function AboutContent() {
                   <li>WhatsApp: +82-10-2728-4255 <a href="" className="text-[#004127] underline"></a></li>
                   <li>Business E-mail: </li>
                 </ul>
-                <hr className="my-6 border-[#cfcfcf]" />
+                <br></br>
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
                   <li>Tel: </li>
                   <li>Sales: +82-2-747-0908</li>
@@ -217,7 +255,7 @@ function AboutContent() {
                     You can contact us by mail and whatsapp <a href="/company?tab=contact" className="text-[#004127] hover:underline">Contacts</a> <br></br> We deliver quickly and securely via trusted carriers, worldwide. Modes of Transport : CIF,FOB
                   </p>
 
-                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Factory</h3>
+
                   <div className="text-sm text-[#1a1a1a] leading-relaxed">
                     <p className="font-semibold">📍Location</p>
                     <p>215-8, Seonhwa-ro 63-gil</p>
@@ -237,6 +275,57 @@ function AboutContent() {
 
                 </section>
               </div>
+            ) : activeTab === "certificates" ? (
+              <>
+                {/* Certificates Grid - 3 items per row */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
+                  {paginatedCerts.map((item) => (
+                    <article key={item.id} className="group cursor-pointer">
+                      <div className="relative w-full h-[450px] overflow-hidden mb-3">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          fill
+                          className={`object-cover group-hover:scale-105 transition-all duration-300 ${allCertImagesReady ? "opacity-100" : "opacity-0"
+                            }`}
+                          onLoad={() => handleCertImageLoad(item.id)}
+                          {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
+                        />
+                        {!allCertImagesReady && (
+                          <div className="absolute inset-0 bg-[#f0f0f0] animate-pulse" />
+                        )}
+                      </div>
+                      <h3 className="text-sm font-medium text-[#1a1a1a] group-hover:text-[#004127] transition-colors">
+                        {item.title}
+                      </h3>
+                    </article>
+                  ))}
+                </div>
+
+                {/* Pagination */}
+                <div className="flex items-center justify-center gap-2 pb-12">
+                  {Array.from({ length: certTotalPages }, (_, i) => i + 1).map((page) => (
+                    <button
+                      key={page}
+                      onClick={() => setCertPage(page)}
+                      className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${certPage === page
+                        ? "bg-[#004127] text-[#ffffff]"
+                        : "text-[#7d7d7d] hover:text-[#1a1a1a]"
+                        }`}
+                    >
+                      {page}
+                    </button>
+                  ))}
+                  {certPage < certTotalPages && (
+                    <button
+                      onClick={() => setCertPage((p) => Math.min(p + 1, certTotalPages))}
+                      className="w-8 h-8 flex items-center justify-center text-[#7d7d7d] hover:text-[#1a1a1a] cursor-pointer transition-colors"
+                    >
+                      <ChevronRight className="w-5 h-5" strokeWidth={3} />
+                    </button>
+                  )}
+                </div>
+              </>
             ) : (
               <>
                 {/* Placeholder content for other tabs */}
