@@ -216,7 +216,7 @@ function NewsContent() {
                         src={item.image}
                         alt={item.title}
                         fill
-                        className={`object-cover group-hover:scale-105 transition-all duration-300 ${allImagesReady ? "opacity-100" : "opacity-0"
+                        className={`object-contain bg-[#f0f0f0] group-hover:scale-105 transition-all duration-300 ${allImagesReady ? "opacity-100" : "opacity-0"
                           }`}
                         onLoad={() => handleImageLoad(item.id)}
                         {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
