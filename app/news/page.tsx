@@ -11,7 +11,7 @@ import { ArrowUp, ChevronRight, Plus, X, Search } from "lucide-react"
 const newsItems = [
 
   { id: 1, title: "10 million$ Export Tower ,2010", image: "/images/1ktop.jpg" },
-  { id: 2, title: "30 million$ Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
+  { id: 2, title: "30 million$ Export Tower, 2022", 
   { id: 3, title: "Dubai Show 2026 Feb. ", image: "/images/dubai.jpeg" },
   { id: 4, title: "Hongkong Jewellery Show 2026 March", image: "/images/HKDTC2026.jpg" },
   { id: 5, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/jewellery-gem-expo.png" },
@@ -216,7 +216,7 @@ function NewsContent() {
                         src={item.image}
                         alt={item.title}
                         fill
-                        className={`object-cover group-hover:scale-105 transition-all duration-300 ${allImagesReady ? "opacity-100" : "opacity-0"
+                        className={`object-contain bg-[#f0f0f0] group-hover:scale-105 transition-all duration-300 ${allImagesReady ? "opacity-100" : "opacity-0"
                           }`}
                         onLoad={() => handleImageLoad(item.id)}
                         {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
