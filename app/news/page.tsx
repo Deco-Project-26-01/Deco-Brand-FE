@@ -11,7 +11,7 @@ import { ArrowUp, ChevronRight, Plus, X, Search } from "lucide-react"
 const newsItems = [
 
   { id: 1, title: "10 million$ Export Tower ,2010", image: "/images/1ktop.jpg" },
-  { id: 2, title: "30 million$ Export Tower, 2022", 
+  { id: 2, title: "30 million$ Export Tower, 2022", image: "/images/Deco_export_tower_3.jpg" },
   { id: 3, title: "Dubai Show 2026 Feb. ", image: "/images/dubai.jpeg" },
   { id: 4, title: "Hongkong Jewellery Show 2026 March", image: "/images/HKDTC2026.jpg" },
   { id: 5, title: "Jewellery & Gem WORLD Hong Kong 2026", image: "/images/jewellery-gem-expo.png" },
