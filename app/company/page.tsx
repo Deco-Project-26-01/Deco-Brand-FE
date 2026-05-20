@@ -199,6 +199,18 @@ function AboutContent() {
                     </div>
                   </div>
 
+                  {/* 2007 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">2007</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">03</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Hong Kong International Jewellery Show 참가 since 2007</p>
+                    </div>
+                  </div>
+
                   {/* 2012 */}
                   <div className="flex gap-8 items-start">
                     <div className="flex-shrink-0 w-24 text-right">
