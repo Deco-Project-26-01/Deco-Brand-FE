@@ -9,8 +9,8 @@ import { ArrowUp, ChevronRight } from "lucide-react"
 import Image from "next/image"
 
 const certificateItems = [
-  { id: 1, title: "무역협회 Korea International Trade Association Membership", image: "/images/kita_kor.JPG" },
-  { id: 2, title: "익산시 귀금속보석 우수제조업체 인증서 ", image: "/images/424987_264942_1117.jpg", link: "https://www.snmnews.com/news/articleView.html?idxno=424987" },
+  { id: 1, title: "Korea International Trade Association Membership", image: "/images/kita_kor.JPG" },
+  { id: 2, title: "Iksan 익산시 귀금속보석 우수제조업체 인증서 ", image: "/images/424987_264942_1117.jpg", link: "https://www.snmnews.com/news/articleView.html?idxno=424987" },
 ]
 
 function AboutContent() {
