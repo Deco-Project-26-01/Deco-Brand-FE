@@ -10,8 +10,7 @@ import Image from "next/image"
 
 const certificateItems = [
   { id: 1, title: "무역협회 회원증", image: "/images/conference.jpg" },
-
-  { id: 2, title: "익산시 귀금속보석 우수제조업체 인증서 ", image: "/images/424987_264942_1117.jpg" },
+  { id: 2, title: "익산시 귀금속보석 우수제조업체 인증서 ", image: "/images/424987_264942_1117.jpg", link: "https://www.snmnews.com/news/articleView.html?idxno=424987" },
 ]
 
 function AboutContent() {
@@ -261,23 +260,47 @@ function AboutContent() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
                   {paginatedCerts.map((item) => (
                     <article key={item.id} className="group cursor-pointer">
-                      <div className="relative w-full h-[450px] overflow-hidden mb-3">
-                        <Image
-                          src={item.image}
-                          alt={item.title}
-                          fill
-                          className={`object-cover group-hover:scale-105 transition-all duration-300 ${allCertImagesReady ? "opacity-100" : "opacity-0"
-                            }`}
-                          onLoad={() => handleCertImageLoad(item.id)}
-                          {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
-                        />
-                        {!allCertImagesReady && (
-                          <div className="absolute inset-0 bg-[#f0f0f0] animate-pulse" />
-                        )}
-                      </div>
-                      <h3 className="text-sm font-medium text-[#1a1a1a] group-hover:text-[#004127] transition-colors">
-                        {item.title}
-                      </h3>
+                      {item.link ? (
+                        <a href={item.link} target="_blank" rel="noopener noreferrer" className="block">
+                          <div className="relative w-full h-[450px] overflow-hidden mb-3">
+                            <Image
+                              src={item.image}
+                              alt={item.title}
+                              fill
+                              className={`object-cover group-hover:scale-105 transition-all duration-300 ${allCertImagesReady ? "opacity-100" : "opacity-0"
+                                }`}
+                              onLoad={() => handleCertImageLoad(item.id)}
+                              {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
+                            />
+                            {!allCertImagesReady && (
+                              <div className="absolute inset-0 bg-[#f0f0f0] animate-pulse" />
+                            )}
+                          </div>
+                          <h3 className="text-sm font-medium text-[#1a1a1a] group-hover:text-[#004127] transition-colors hover:underline">
+                            {item.title}
+                          </h3>
+                        </a>
+                      ) : (
+                        <>
+                          <div className="relative w-full h-[450px] overflow-hidden mb-3">
+                            <Image
+                              src={item.image}
+                              alt={item.title}
+                              fill
+                              className={`object-cover group-hover:scale-105 transition-all duration-300 ${allCertImagesReady ? "opacity-100" : "opacity-0"
+                                }`}
+                              onLoad={() => handleCertImageLoad(item.id)}
+                              {...(item.id === 1 ? { priority: true } : { loading: "lazy" })}
+                            />
+                            {!allCertImagesReady && (
+                              <div className="absolute inset-0 bg-[#f0f0f0] animate-pulse" />
+                            )}
+                          </div>
+                          <h3 className="text-sm font-medium text-[#1a1a1a] group-hover:text-[#004127] transition-colors">
+                            {item.title}
+                          </h3>
+                        </>
+                      )}
                     </article>
                   ))}
                 </div>
