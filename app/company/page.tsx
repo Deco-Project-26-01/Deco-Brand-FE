@@ -144,6 +144,9 @@ function AboutContent() {
                   height={780}
                   className="w-full h-auto rounded mb-12"
                   priority
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1400 780'%3E%3Crect fill='%23f0f0f0' width='1400' height='780'/%3E%3C/svg%3E"
+                  quality={85}
                 />
 
                 {/* Timeline */}
@@ -193,6 +196,18 @@ function AboutContent() {
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
                       <p className="text-sm text-[#4f4f4f] leading-relaxed">서울사무소를 서울 종로구 종로 143-1(종로3가) 소재로 이전</p>
+                    </div>
+                  </div>
+
+                  {/* 2007 */}
+                  <div className="flex gap-8 items-start">
+                    <div className="flex-shrink-0 w-24 text-right">
+                      <div className="text-xl font-bold text-[#004127]">2007</div>
+                      <div className="text-xs text-[#7d7d7d] mt-1">03</div>
+                    </div>
+                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
+                    <div className="flex-1 pt-1">
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Hong Kong International Jewellery Show 참가 since 2007</p>
                     </div>
                   </div>
 
@@ -263,13 +278,6 @@ function AboutContent() {
                   </p>
                 </section>
 
-                {/* Certificate of authenticity */}
-                <section className="mb-8">
-                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Certificate</h3>
-                  <p className="text-sm text-[#1a1a1a] leading-relaxed">
-                    Each jewelry piece comes with a certificate of authenticity, confirming the gold purity and the materials used.
-                  </p>
-                </section>
 
                 {/* Our selection */}
                 <section className="mb-8">

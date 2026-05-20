@@ -110,24 +110,24 @@ export default function HomePage() {
                     </p>
                   </div>
 
-                    <div className="max-w-[700px] mx-auto space-y-8 mt-8">
-                      <div>
-                        <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Nature of Business</h2>
-                        <p className="text-sm text-[#4f4f4f] leading-relaxed">Exporter, Manufacturer</p>
-                      </div>
-                      <div>
-                        <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product / Service Range</h2>
-                        <p className="text-sm text-[#4f4f4f] leading-relaxed">Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery</p>
-                      </div>
-                      <div>
-                        <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Exhibit / Brand / Service Description</h2>
-                        <p className="text-sm text-[#4f4f4f] leading-relaxed">18K gold mounting jewellery of tennis bracelet, necklace & earring for diamonds.</p>
-                      </div>
-                      <div>
-                        <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
-                        <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong, India, Japan, USA, Australia, Thailand ...</p>
-                      </div>
+                  <div className="max-w-[700px] mx-auto space-y-8 mt-8">
+                    <div>
+                      <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Nature of Business</h2>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Exporter, Manufacturer</p>
                     </div>
+                    <div>
+                      <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product / Service Range</h2>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery</p>
+                    </div>
+                    <div>
+                      <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Exhibit / Brand / Service Description</h2>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">18K gold mounting jewellery of tennis bracelet, necklace & earring for diamonds.</p>
+                    </div>
+                    <div>
+                      <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong, India, Japan, USA, Australia, Thailand, Eastern Europe, </p>
+                    </div>
+                  </div>
                 </div>
                 <div className="w-full md:w-[300px] flex-shrink-0">
                   <div className="relative w-full h-[500px] overflow-hidden">
@@ -140,7 +140,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              <p className="text-right mt-4 text-xs text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors"> CEO : KIM KISEONG, LEE KWANYOUNG</p>
+              <p className="text-right mt-4 text-sm text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors"> CEO : KIM KISEONG, LEE KWANYOUNG</p>
             </section>
           )}
         </div>
