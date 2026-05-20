@@ -175,7 +175,7 @@ function AboutContent() {
                 </section>
 
                 {/* How our jewelry is created */}
-                <section className="mb-8">
+                <section className="mb-16">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">How our jewelry is created</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
                     We work exclusively with high-quality gold materials, including 10k gold, 14k gold, and 18k gold. All materials are carefully selected and sourced from trusted suppliers.
