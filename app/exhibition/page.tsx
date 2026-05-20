@@ -74,8 +74,18 @@ export default function ExhibitionPage() {
                 </button>
                 {openItem === item.id && (
                   <div className="px-4 pb-5 text-sm text-[#4f4f4f] leading-relaxed">
-                    {item.description}
-
+                    {item.description && item.description.trim().startsWith("http") ? (
+                      <a
+                        href={item.description.trim()}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#004127] underline hover:text-[#9b7b4f] transition-colors break-all"
+                      >
+                        {item.description.trim()}
+                      </a>
+                    ) : (
+                      item.description
+                    )}
                   </div>
                 )}
               </div>

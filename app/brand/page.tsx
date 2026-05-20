@@ -27,7 +27,7 @@ function BrandContent() {
   const currentHeroImage = heroImages[category] || "/images/necklace-hero.jpg"
 
   return (
-    <div className="flex flex-col min-h-screen ">
+    <div className="flex flex-col min-h-screen">
 
 
       <Header />
@@ -52,7 +52,7 @@ function BrandContent() {
         </div>
 
         {/* Hero Image */}
-        <section className="relative w-full h-[500px] md:h-[600px]">
+        <section className="relative w-full h-[500px] md:h-[600px] flex-1">
           <Image
             src={currentHeroImage}
             alt="Brand Collection"
