@@ -266,13 +266,6 @@ function AboutContent() {
                   </p>
                 </section>
 
-                {/* Certificate of authenticity */}
-                <section className="mb-8">
-                  <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Certificate</h3>
-                  <p className="text-sm text-[#1a1a1a] leading-relaxed">
-                    Each jewelry piece comes with a certificate of authenticity, confirming the gold purity and the materials used.
-                  </p>
-                </section>
 
                 {/* Our selection */}
                 <section className="mb-8">
