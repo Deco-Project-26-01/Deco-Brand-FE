@@ -97,9 +97,7 @@ function AboutContent() {
           <div className="py-8">
             {activeTab === "contact" ? (
               <div className="max-w-[600px] mx-auto">
-                <h2 className="text-xl font-semibold text-[#1a1a1a] mb-8">
-                  Contact
-                </h2>
+
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
                   <li>WhatsApp: +82-10-2728-4255</li>
                   <li>Business E-mail: </li>
