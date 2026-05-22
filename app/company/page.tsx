@@ -110,7 +110,16 @@ function AboutContent() {
                   <li>Sales: +82-2-747-0908</li>
                   <li>Factory: +82-63-833-8435</li>
                 </ul>
-
+                {/* Image Area */}
+                <div className="mt-6 mb-6 w-full max-w-sm">
+                  <Image
+                    src="/images/decoindco_pdf.jpg"
+                    alt="DECO IND. CO., LTD - 18K Mounting Jewelry Catalog"
+                    width={600}
+                    height={800}
+                    className="w-full h-auto"
+                  />
+                </div>
                 <hr className="my-6 border-[#cfcfcf]" />
 
                 <h2 className="text-xl font-semibold text-[#1a1a1a] mb-8">
