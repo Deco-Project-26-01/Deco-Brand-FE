@@ -107,7 +107,7 @@ export default function HomePage() {
                       Our products are manufactured in our own factory in South Korea, ensuring full control over quality and precision.
                     </p>
                     <p>
-                      We do not engage in mass production. Each one is carefully crafted and assembled by skilled artisans.
+                      Each one is carefully crafted and assembled by skilled artisans.
                     </p>
                   </div>
 
@@ -151,6 +151,14 @@ export default function HomePage() {
                         <div className="flex items-center gap-1.5">
                           <span className="fi fi-th text-xl"></span>
                           <span className="text-sm text-[#4f4f4f]">Thailand</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-it text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">Italia</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-sg text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">Singapore</span>
                         </div>
                       </div>
                     </div>
