@@ -11,10 +11,10 @@ const navItems = [
     label: "Company",
     href: "/company",
     submenu: [
-      { label: "How we work", href: "/company?tab=how-we-work" },
-      { label: "History", href: "/company?tab=history" },
-      { label: "Certificates", href: "/company?tab=certificates" },
-      { label: "Contact", href: "/company?tab=contact" },
+      { label: "How we work", href: "/company/how-we-work" },
+      { label: "History", href: "/company/history" },
+      { label: "Certificates", href: "/company/certificates" },
+      { label: "Contact", href: "/company/contact" },
     ],
   },
   {
