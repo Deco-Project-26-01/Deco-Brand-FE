@@ -154,7 +154,7 @@ export default function HomePage() {
                         </div>
                         <div className="flex items-center gap-1.5">
                           <span className="fi fi-it text-xl"></span>
-                          <span className="text-sm text-[#4f4f4f]"><Italy></Italy></span>
+                          <span className="text-sm text-[#4f4f4f]">Italy</span>
                         </div>
                         <div className="flex items-center gap-1.5">
                           <span className="fi fi-sg text-xl"></span>
