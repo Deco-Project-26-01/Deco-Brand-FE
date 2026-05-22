@@ -5,6 +5,7 @@ import { useRef, useState, useEffect } from "react"
 import Header from "@/components/header"
 import Image from "next/image"
 import Link from "next/link"
+import "flag-icons/css/flag-icons.min.css"
 
 const Footer = dynamic(() => import("@/components/footer"), {
   ssr: false,
@@ -100,32 +101,66 @@ export default function HomePage() {
                   <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">Since 1986, we manufacture and export to 20+ countries.</h2>
                   <div className="mt-4 text-sm text-[#4f4f4f] leading-relaxed space-y-2">
                     <p>
-                      Lead Time : 3 ~ 5days
+                      Lead Time : 3~5 days for sample, 2~4 weeks for bulk order
                     </p>
                     <p>
                       Our products are manufactured in our own factory in South Korea, ensuring full control over quality and precision.
                     </p>
                     <p>
-                      We do not engage in mass production. Each one is carefully crafted and assembled by skilled artisans.
+                      Each one is carefully crafted and assembled by skilled artisans.
                     </p>
                   </div>
 
                   <div className="max-w-[700px] mx-auto space-y-8 mt-8">
+
                     <div>
-                      <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Nature of Business</h2>
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Exporter, Manufacturer</p>
-                    </div>
-                    <div>
-                      <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product / Service Range</h2>
+                      <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product</h2>
                       <p className="text-sm text-[#4f4f4f] leading-relaxed">Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery</p>
                     </div>
                     <div>
-                      <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Exhibit / Brand / Service Description</h2>
+                      <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Brand</h2>
                       <p className="text-sm text-[#4f4f4f] leading-relaxed">18K gold mounting jewellery of tennis bracelet, necklace & earring for diamonds.</p>
                     </div>
                     <div>
                       <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong, India, Japan, USA, Australia, Thailand, Eastern Europe, </p>
+                      <div className="flex flex-wrap gap-4 items-center">
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-ae text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">UAE</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-hk text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">Hong Kong</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-in text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">India</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-jp text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">Japan</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-us text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">USA</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-au text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">Australia</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-th text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">Thailand</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-it text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">Italy</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-sg text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">Singapore</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
