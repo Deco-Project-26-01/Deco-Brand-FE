@@ -147,12 +147,12 @@ function AboutContent() {
                 <Image
                   src="/images/deco_history.webp"
                   alt="DECO Industry History Timeline - 1986 to 2026"
-                  width={1400}
-                  height={780}
+                  width={1000}
+                  height={560}
                   className="w-full h-auto rounded mb-12"
                   priority
                   placeholder="blur"
-                  blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1400 780'%3E%3Crect fill='%23f0f0f0' width='1400' height='780'/%3E%3C/svg%3E"
+                  blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 560'%3E%3Crect fill='%23f0f0f0' width='1000' height='560'/%3E%3C/svg%3E"
                   quality={85}
                 />
 
