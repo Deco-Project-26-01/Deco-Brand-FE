@@ -10,7 +10,7 @@ import Image from "next/image"
 
 const certificateItems = [
   { id: 1, title: "Korea International Trade Association Membership", image: "/images/kita_kor.JPG" },
-  { id: 2, title: "Iksan 익산시 귀금속보석 우수제조업체 인증서 ", image: "/images/424987_264942_1117.jpg", link: "https://www.snmnews.com/news/articleView.html?idxno=424987" },
+  { id: 2, title: "Outstanding Precious Metals & Jewelry Manufacturing Certificate - Iksan", image: "/images/424987_264942_1117.jpg", link: "https://www.snmnews.com/news/articleView.html?idxno=424987" },
 ]
 
 const validTabs = ["how-we-work", "history", "certificates", "contact"] as const
@@ -190,7 +190,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">(주)데코산업 설립</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Founded as Deco Industry Co., Ltd. in Seoul, South Korea</p>
                     </div>
                   </div>
 
@@ -201,7 +201,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">자본금을 100백만원으로 변경</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Capital increased to 1 billion Korean Won</p>
                     </div>
                   </div>
 
@@ -212,7 +212,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">서울 종로구 봉익동 117-2 영동빌딩 402호(서울사무소)로 지점 이동</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Seoul office relocated to Jongno district</p>
                     </div>
                   </div>
 
@@ -223,7 +223,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">서울사무소를 서울 종로구 종로 143-1(종로3가) 소재로 이전</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Seoul office relocated to Jongno 143-1, Seoul</p>
                     </div>
                   </div>
 
@@ -234,7 +234,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Hong Kong International Jewellery Show 참가 since 2007</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">First international exhibition at Hong Kong International Jewellery Show (ongoing participation since)</p>
                     </div>
                   </div>
 
@@ -245,7 +245,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">대표이사 김응열 사임 및 공동대표이사 이관영, 김기성 취임</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Co-CEO leadership transition: Mr. Kim Ki-seong and Mr. Lee Kwan-young appointed</p>
                     </div>
                   </div>
 
@@ -256,14 +256,14 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">제59회 무역의 날 기념식에서 &apos;3천만불 수출의 탑&apos; 수상</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Recognized with the &quot;USD 30 Million Export Award&quot; at Korea&apos;s 59th Trade Day (Ministry of Trade, Industry and Energy)</p>
                     </div>
                   </div>
                 </div>
               </div>
             ) : activeTab === "how-we-work" ? (
               <div className="max-w-[800px] mx-auto">
-                <h2 className="text-2xl font-bold text-[#1a1a1a] text-center mb-2">(주) 데코산업 DECO IND CO., LTD.</h2>
+                <h2 className="text-2xl font-bold text-[#1a1a1a] text-center mb-2">DECO IND CO., LTD.</h2>
                 <hr className="border-[#cfcfcf] mb-8" />
 
                 <section className="mb-8">
