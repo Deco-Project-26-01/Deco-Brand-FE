@@ -78,12 +78,12 @@ function AboutContent() {
           </h1>
 
           {/* Tabs */}
-          <div className="flex gap-2 mb-10">
+          <div className="flex flex-wrap gap-2 mb-10">
             {tabs.map((tab) => (
               <a
                 key={tab.id}
                 href={`/company?tab=${tab.id}`}
-                className={`px-4 py-2 text-sm font-medium border transition-colors ${activeTab === tab.id
+                className={`px-3 py-2 text-xs sm:text-sm font-medium border transition-colors whitespace-nowrap ${activeTab === tab.id
                   ? "bg-[#004127] text-[#ffffff] border-[#004127]"
                   : "bg-[#ffffff] text-[#4f4f4f] border-[#cfcfcf] hover:border-[#004127]"
                   }`}
@@ -97,9 +97,7 @@ function AboutContent() {
           <div className="py-8">
             {activeTab === "contact" ? (
               <div className="max-w-[600px] mx-auto">
-                <h2 className="text-xl font-semibold text-[#1a1a1a] mb-8">
-                  Contact
-                </h2>
+
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
                   <li>WhatsApp: +82-10-2728-4255</li>
                   <li>Business E-mail: </li>
@@ -110,7 +108,16 @@ function AboutContent() {
                   <li>Sales: +82-2-747-0908</li>
                   <li>Factory: +82-63-833-8435</li>
                 </ul>
-
+                {/* Image Area */}
+                <div className="mt-6 mb-6 w-full max-w-sm">
+                  <Image
+                    src="/images/decoindco_pdf.jpg"
+                    alt="DECO IND. CO., LTD - 18K Mounting Jewelry Catalog"
+                    width={600}
+                    height={800}
+                    className="w-full h-auto"
+                  />
+                </div>
                 <hr className="my-6 border-[#cfcfcf]" />
 
                 <h2 className="text-xl font-semibold text-[#1a1a1a] mb-8">
@@ -138,14 +145,14 @@ function AboutContent() {
             ) : activeTab === "history" ? (
               <div className="w-full max-w-[1000px] mx-auto">
                 <Image
-                  src="/images/deco_history.png"
+                  src="/images/deco_history.webp"
                   alt="DECO Industry History Timeline - 1986 to 2026"
-                  width={1400}
-                  height={780}
+                  width={1000}
+                  height={560}
                   className="w-full h-auto rounded mb-12"
                   priority
                   placeholder="blur"
-                  blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1400 780'%3E%3Crect fill='%23f0f0f0' width='1400' height='780'/%3E%3C/svg%3E"
+                  blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 560'%3E%3Crect fill='%23f0f0f0' width='1000' height='560'/%3E%3C/svg%3E"
                   quality={85}
                 />
 
