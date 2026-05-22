@@ -147,7 +147,7 @@ function AboutContent() {
             ) : activeTab === "history" ? (
               <div className="w-full max-w-[1000px] mx-auto">
                 <Image
-                  src="/images/deco_history.png"
+                  src="/images/deco_history.webp"
                   alt="DECO Industry History Timeline - 1986 to 2026"
                   width={1400}
                   height={780}
