@@ -132,7 +132,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                 </ul>
                 <br />
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>Tel: </li>
+                  <li>Tel </li>
                   <li>Sales: +82-2-747-0908</li>
                   <li>Factory: +82-63-833-8435</li>
                 </ul>
@@ -268,7 +268,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
 
                 <section className="mb-8">
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Deco Ind Co Ltd is a B2B jewelry brand based in South Korea since in 1986. We specialize in 10k, 14k, 18k mounting for tennis bracelets, necklaces, and earrings for diamonds and color stones since 1986.
+                    Deco Ind Co Ltd is a B2B jewelry brand based in South Korea since 1986. We specialize in 10k, 14k, 18k mounting for tennis bracelets, necklaces, and earrings for diamonds and color stones since 1986.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
                     Every piece is personally selected, inspected and completed with a strong focus on quality, origin and craftsmanship. We take personal responsibility for each item we offer.
@@ -291,7 +291,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     We work exclusively with high-quality gold materials, including 10k gold, 14k gold, and 18k gold. All materials are carefully selected and sourced from trusted suppliers.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Our jewelry is manufactured in our own factory in South Korea, ensuring full control over quality and precision. We work with long-standing, carefully vetted international partners .
+                    Our jewelry is manufactured in our own factory in South Korea, ensuring full control over quality and precision. We work with long-standing, carefully vetted international partners.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
                     We balance precision craftsmanship with reliable production capacity. Each piece passes individual QC inspection.
@@ -318,10 +318,10 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Trust and responsibility</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Our work follows ethical principles. Deco Ind Co Ltd is founded by owner MR. Kim Eung Yeol, who is origin and presentation of Deco indco Ltd jewelry.
+                    Our work follows ethical principles. Deco Ind Co Ltd is founded by MR. Kim Eung Yeol.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
-                    For business enquiries or specific requests, you can reach the Seoul Office via the email decoindco@naver.com
+                    For business enquiries or specific requests, you can reach the Seoul Office via the email decoindco@gmail.com
                   </p>
                 </section>
 
@@ -331,7 +331,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     You can contact us by mail and whatsapp <a href="/company/contact" className="text-[#004127] hover:underline">Contacts</a>
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    We deliver quickly and securely via trusted carriers, worldwide. Modes of Transport : CIF,FOB
+                    We deliver quickly and securely via trusted carriers, worldwide. We support CIF and FOB shipping terms
                   </p>
 
                   <div className="text-sm text-[#1a1a1a] leading-relaxed">
