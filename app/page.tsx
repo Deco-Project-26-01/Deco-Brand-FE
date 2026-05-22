@@ -5,6 +5,7 @@ import { useRef, useState, useEffect } from "react"
 import Header from "@/components/header"
 import Image from "next/image"
 import Link from "next/link"
+import "flag-icons/css/flag-icons.min.css"
 
 const Footer = dynamic(() => import("@/components/footer"), {
   ssr: false,
@@ -122,7 +123,36 @@ export default function HomePage() {
                     </div>
                     <div>
                       <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">UAE, Hong Kong, India, Japan, USA, Australia, Thailand, Eastern Europe, </p>
+                      <div className="flex flex-wrap gap-4 items-center">
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-ae text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">UAE</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-hk text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">Hong Kong</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-in text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">India</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-jp text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">Japan</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-us text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">USA</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-au text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">Australia</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <span className="fi fi-th text-xl"></span>
+                          <span className="text-sm text-[#4f4f4f]">Thailand</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
