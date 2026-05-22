@@ -100,7 +100,7 @@ export default function HomePage() {
                   <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">Since 1986, we manufacture and export to 20+ countries.</h2>
                   <div className="mt-4 text-sm text-[#4f4f4f] leading-relaxed space-y-2">
                     <p>
-                      Lead Time : 3 ~ 5days
+                      Lead Time : 3~5 days for sample, 2~4 weeks for bulk order
                     </p>
                     <p>
                       Our products are manufactured in our own factory in South Korea, ensuring full control over quality and precision.
@@ -111,7 +111,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="max-w-[700px] mx-auto space-y-8 mt-8">
-                    
+
                     <div>
                       <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product</h2>
                       <p className="text-sm text-[#4f4f4f] leading-relaxed">Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery</p>
