@@ -190,7 +190,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Founded as Deco Industry Co., Ltd. in Seoul, South Korea</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Founded as Deco Ind Co., Ltd. in Seoul, South Korea</p>
                     </div>
                   </div>
 
@@ -223,7 +223,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">First international exhibition at Hong Kong International Jewellery Show (ongoing participation since)</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">First participated in the Hong Kong International Jewellery Show (Ongoing)</p>
                     </div>
                   </div>
 
@@ -234,7 +234,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Co-CEO leadership transition: Mr. Kim Ki-seong and Mr. Lee Kwan-young appointed</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Kim Ki-seong and Lee Kwan-young Appointed as Co-CEOs</p>
                     </div>
                   </div>
 
@@ -245,7 +245,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Recognized with the &quot;USD 30 Million Export Award&quot; at Korea&apos;s 59th Trade Day (Ministry of Trade, Industry and Energy)</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Awarded the &quot;USD 30 Million Export Tower&quot; at Korea&apos;s 59th Trade Day </p>
                     </div>
                   </div>
                 </div>
