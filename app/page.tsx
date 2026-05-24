@@ -1,44 +1,10 @@
-"use client"
-
-import dynamic from "next/dynamic"
-import { useRef, useState, useEffect } from "react"
 import Header from "@/components/header"
+import Footer from "@/components/footer"
 import Image from "next/image"
 import Link from "next/link"
 import "flag-icons/css/flag-icons.min.css"
 
-const Footer = dynamic(() => import("@/components/footer"), {
-  ssr: false,
-  loading: () => null,
-})
-
-function useLazyVisible(threshold = 0.1) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [isVisible, setIsVisible] = useState(false)
-
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-          observer.disconnect()
-        }
-      },
-      { threshold }
-    )
-    observer.observe(el)
-    return () => observer.disconnect()
-  }, [threshold])
-
-  return { ref, isVisible }
-}
-
 export default function HomePage() {
-  const section2 = useLazyVisible()
-  const footerSection = useLazyVisible()
-
   return (
     <div className="min-h-screen flex flex-col bg-[#ffffff]">
       <Header />
@@ -92,10 +58,8 @@ export default function HomePage() {
           <hr className="border-[#eef1f4]" />
         </div>
 
-        {/* Content Section 2 - lazy loaded on scroll */}
-        <div ref={section2.ref}>
-          {section2.isVisible && (
-            <section className="max-w-[1280px] mx-auto px-6 py-12">
+        {/* Content Section 2 */}
+        <section className="max-w-[1280px] mx-auto px-6 py-12">
               <div className="flex flex-col md:flex-row items-start gap-8">
                 <div className="flex-1">
                   <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">Since 1986, we manufacture and export to 20+ countries.</h2>
@@ -177,14 +141,10 @@ export default function HomePage() {
               </div>
               <p className="text-right mt-4 text-sm text-[#7d7d7d] hover:text-[#1a1a1a] transition-colors"> CEO : KIM KISEONG, LEE KWANYOUNG</p>
             </section>
-          )}
-        </div>
       </main>
 
-      {/* Footer - lazy loaded on scroll */}
-      <div ref={footerSection.ref}>
-        {footerSection.isVisible && <Footer />}
-      </div>
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }
