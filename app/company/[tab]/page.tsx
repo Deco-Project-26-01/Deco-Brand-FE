@@ -25,7 +25,7 @@ const tabConfig: Record<TabType, { label: string; title: string; description: st
   "history": {
     label: "History",
     title: "Company History | DECO IND CO., LTD.",
-    description: "Explore the history of DECO Industry from 1986 to present. 38 years of excellence in gold jewelry manufacturing.",
+    description: "Explore the history of DECO Industry from 1986 to present.",
   },
   "certificates": {
     label: "Certificates",
@@ -307,8 +307,13 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Trust and responsibility</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Our work follows ethical principles. Deco Ind Co Ltd is founded by MR. Kim Eung Yeol.
+                    Our work follows ethical principles. Founded in 1986 by Mr. Kim Eung-yeol,
+                    Deco Ind Co., Ltd. is currently led by co-CEOs Mr. Lee Kwan-young and
+                    Mr. Kim Ki-seong, who have directed the company since 2012.
                   </p>
+
+
+
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
                     For business enquiries or specific requests, you can reach the Seoul Office via the email decoindco@gmail.com
                   </p>
@@ -396,8 +401,8 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                         key={page}
                         onClick={() => setCertPage(page)}
                         className={`w-8 h-8 flex items-center justify-center text-sm font-medium rounded cursor-pointer transition-colors ${certPage === page
-                            ? "bg-[#004127] text-[#ffffff]"
-                            : "text-[#7d7d7d] hover:text-[#1a1a1a]"
+                          ? "bg-[#004127] text-[#ffffff]"
+                          : "text-[#7d7d7d] hover:text-[#1a1a1a]"
                           }`}
                       >
                         {page}
