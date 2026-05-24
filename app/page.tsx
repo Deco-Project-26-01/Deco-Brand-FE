@@ -64,7 +64,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row items-start gap-8">
             <div className="flex-1">
               <h2 className="text-xl font-semibold text-[#1a1a1a] mb-4">
-                Since 1986, manufacturing in South Korea. Exporting to more than 20 countries worldwide.
+                Since 1986, manufacturing in South Korea. Exporting to 20+ countries worldwide.
               </h2>
 
               {/* Stats cards */}
@@ -91,19 +91,19 @@ export default function HomePage() {
 
               <div className="max-w-[700px] mx-auto space-y-8 mt-8">
                 <div>
-                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product</h2>
+                  <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product</h3>
                   <p className="text-sm text-[#4f4f4f] leading-relaxed">
                     Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Brand</h2>
+                  <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">Brand</h3>
                   <p className="text-sm text-[#4f4f4f] leading-relaxed">
                     18K gold mounting jewellery of tennis bracelet, necklace & earring for diamonds.
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
+                  <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h3>
                   <div className="flex flex-wrap gap-4 items-center">
                     <div className="flex items-center gap-1.5">
                       <span className="fi fi-us text-xl"></span>
@@ -154,11 +154,11 @@ export default function HomePage() {
                   className="object-cover"
                 />
               </div>
+              <p className="text-right mt-2 text-sm text-[#7d7d7d]">
+                CEO : KIM KISEONG, LEE KWANYOUNG
+              </p>
             </div>
           </div>
-          <p className="text-right mt-4 text-sm text-[#7d7d7d]">
-            CEO : KIM KISEONG, LEE KWANYOUNG
-          </p>
         </section>
       </main>
 
