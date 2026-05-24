@@ -10,7 +10,7 @@ import Image from "next/image"
 
 const certificateItems = [
   { id: 1, title: "Korea International Trade Association Membership", image: "/images/kita_kor.JPG" },
-  { id: 2, title: "Iksan 익산시 귀금속보석 우수제조업체 인증서 ", image: "/images/424987_264942_1117.jpg", link: "https://www.snmnews.com/news/articleView.html?idxno=424987" },
+  { id: 2, title: "Outstanding Precious Metals & Jewelry Manufacturing Certificate - Iksan", image: "/images/424987_264942_1117.jpg", link: "https://www.snmnews.com/news/articleView.html?idxno=424987" },
 ]
 
 const validTabs = ["how-we-work", "history", "certificates", "contact"] as const
@@ -132,7 +132,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                 </ul>
                 <br />
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>Tel: </li>
+                  <li>Tel </li>
                   <li>Sales: +82-2-747-0908</li>
                   <li>Factory: +82-63-833-8435</li>
                 </ul>
@@ -190,18 +190,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">(주)데코산업 설립</p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-8 items-start">
-                    <div className="flex-shrink-0 w-24 text-right">
-                      <div className="text-xl font-bold text-[#004127]">1991</div>
-                      <div className="text-xs text-[#7d7d7d] mt-1">11</div>
-                    </div>
-                    <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
-                    <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">자본금을 100백만원으로 변경</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Founded as Deco Ind Co., Ltd. in Seoul, South Korea</p>
                     </div>
                   </div>
 
@@ -212,7 +201,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">서울 종로구 봉익동 117-2 영동빌딩 402호(서울사무소)로 지점 이동</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Seoul office relocated to Jongno district</p>
                     </div>
                   </div>
 
@@ -223,7 +212,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">서울사무소를 서울 종로구 종로 143-1(종로3가) 소재로 이전</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Seoul office relocated to Jongno 143-1, Seoul</p>
                     </div>
                   </div>
 
@@ -234,7 +223,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Hong Kong International Jewellery Show 참가 since 2007</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">First participated in the Hong Kong International Jewellery Show (Ongoing)</p>
                     </div>
                   </div>
 
@@ -245,7 +234,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">대표이사 김응열 사임 및 공동대표이사 이관영, 김기성 취임</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Kim Ki-seong and Lee Kwan-young Appointed as Co-CEOs</p>
                     </div>
                   </div>
 
@@ -256,19 +245,19 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
                     <div className="flex-1 pt-1">
-                      <p className="text-sm text-[#4f4f4f] leading-relaxed">제59회 무역의 날 기념식에서 &apos;3천만불 수출의 탑&apos; 수상</p>
+                      <p className="text-sm text-[#4f4f4f] leading-relaxed">Awarded the &quot;USD 30 Million Export Tower&quot; at Korea&apos;s 59th Trade Day </p>
                     </div>
                   </div>
                 </div>
               </div>
             ) : activeTab === "how-we-work" ? (
               <div className="max-w-[800px] mx-auto">
-                <h2 className="text-2xl font-bold text-[#1a1a1a] text-center mb-2">(주) 데코산업 DECO IND CO., LTD.</h2>
+                <h2 className="text-2xl font-bold text-[#1a1a1a] text-center mb-2">DECO IND CO., LTD.</h2>
                 <hr className="border-[#cfcfcf] mb-8" />
 
                 <section className="mb-8">
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Deco Ind Co Ltd is a B2B jewelry brand based in South Korea since in 1986. We specialize in 10k, 14k, 18k mounting for tennis bracelets, necklaces, and earrings for diamonds and color stones since 1986.
+                    Deco Ind Co Ltd is a B2B jewelry brand based in South Korea since 1986. We specialize in 10k, 14k, 18k mounting for tennis bracelets, necklaces, and earrings for diamonds and color stones since 1986.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
                     Every piece is personally selected, inspected and completed with a strong focus on quality, origin and craftsmanship. We take personal responsibility for each item we offer.
@@ -291,7 +280,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     We work exclusively with high-quality gold materials, including 10k gold, 14k gold, and 18k gold. All materials are carefully selected and sourced from trusted suppliers.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Our jewelry is manufactured in our own factory in South Korea, ensuring full control over quality and precision. We work with long-standing, carefully vetted international partners .
+                    Our jewelry is manufactured in our own factory in South Korea, ensuring full control over quality and precision. We work with long-standing, carefully vetted international partners.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
                     We balance precision craftsmanship with reliable production capacity. Each piece passes individual QC inspection.
@@ -318,10 +307,10 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Trust and responsibility</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Our work follows ethical principles. Deco Ind Co Ltd is founded by owner MR. Kim Eung Yeol, who is origin and presentation of Deco indco Ltd jewelry.
+                    Our work follows ethical principles. Deco Ind Co Ltd is founded by MR. Kim Eung Yeol.
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed">
-                    For business enquiries or specific requests, you can reach the Seoul Office via the email decoindco@naver.com
+                    For business enquiries or specific requests, you can reach the Seoul Office via the email decoindco@gmail.com
                   </p>
                 </section>
 
@@ -331,7 +320,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                     You can contact us by mail and whatsapp <a href="/company/contact" className="text-[#004127] hover:underline">Contacts</a>
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    We deliver quickly and securely via trusted carriers, worldwide. Modes of Transport : CIF,FOB
+                    We deliver quickly and securely via trusted carriers, worldwide. We support CIF and FOB shipping terms
                   </p>
 
                   <div className="text-sm text-[#1a1a1a] leading-relaxed">
