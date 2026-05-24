@@ -92,6 +92,10 @@ export default function HomePage() {
                   <h2 className="text-lg font-semibold text-[#1a1a1a] mb-2">Main Markets</h2>
                   <div className="flex flex-wrap gap-4 items-center">
                     <div className="flex items-center gap-1.5">
+                      <span className="fi fi-us text-xl"></span>
+                      <span className="text-sm text-[#4f4f4f]">USA</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
                       <span className="fi fi-ae text-xl"></span>
                       <span className="text-sm text-[#4f4f4f]">UAE</span>
                     </div>
@@ -106,10 +110,6 @@ export default function HomePage() {
                     <div className="flex items-center gap-1.5">
                       <span className="fi fi-jp text-xl"></span>
                       <span className="text-sm text-[#4f4f4f]">Japan</span>
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                      <span className="fi fi-us text-xl"></span>
-                      <span className="text-sm text-[#4f4f4f]">USA</span>
                     </div>
                     <div className="flex items-center gap-1.5">
                       <span className="fi fi-au text-xl"></span>
