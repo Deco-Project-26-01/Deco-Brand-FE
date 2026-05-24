@@ -184,67 +184,67 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
 
                 <div className="space-y-8">
                   <div className="flex gap-8 items-start">
-                    <div className="flex-shrink-0 w-24 text-right">
+                    <div className="flex-shrink-0 w-24 text-center">
                       <div className="text-xl font-bold text-[#004127]">1986</div>
                       <div className="text-xs text-[#7d7d7d] mt-1">08</div>
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
-                    <div className="flex-1 pt-1">
+                    <div className="flex-1 pt-1 text-center">
                       <p className="text-sm text-[#4f4f4f] leading-relaxed">Founded as Deco Ind Co., Ltd. in Seoul, South Korea</p>
                     </div>
                   </div>
 
                   <div className="flex gap-8 items-start">
-                    <div className="flex-shrink-0 w-24 text-right">
+                    <div className="flex-shrink-0 w-24 text-center">
                       <div className="text-xl font-bold text-[#004127]">1994</div>
                       <div className="text-xs text-[#7d7d7d] mt-1">06</div>
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
-                    <div className="flex-1 pt-1">
+                    <div className="flex-1 pt-1 text-center">
                       <p className="text-sm text-[#4f4f4f] leading-relaxed">Seoul office relocated to Jongno district</p>
                     </div>
                   </div>
 
                   <div className="flex gap-8 items-start">
-                    <div className="flex-shrink-0 w-24 text-right">
+                    <div className="flex-shrink-0 w-24 text-center">
                       <div className="text-xl font-bold text-[#004127]">2002</div>
                       <div className="text-xs text-[#7d7d7d] mt-1">10</div>
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
-                    <div className="flex-1 pt-1">
+                    <div className="flex-1 pt-1 text-center">
                       <p className="text-sm text-[#4f4f4f] leading-relaxed">Seoul office relocated to Jongno 143-1, Seoul</p>
                     </div>
                   </div>
 
                   <div className="flex gap-8 items-start">
-                    <div className="flex-shrink-0 w-24 text-right">
+                    <div className="flex-shrink-0 w-24 text-center">
                       <div className="text-xl font-bold text-[#004127]">2007</div>
                       <div className="text-xs text-[#7d7d7d] mt-1">03</div>
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
-                    <div className="flex-1 pt-1">
+                    <div className="flex-1 pt-1 text-center">
                       <p className="text-sm text-[#4f4f4f] leading-relaxed">First participated in the Hong Kong International Jewellery Show (Ongoing)</p>
                     </div>
                   </div>
 
                   <div className="flex gap-8 items-start">
-                    <div className="flex-shrink-0 w-24 text-right">
+                    <div className="flex-shrink-0 w-24 text-center">
                       <div className="text-xl font-bold text-[#004127]">2012</div>
                       <div className="text-xs text-[#7d7d7d] mt-1">08</div>
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
-                    <div className="flex-1 pt-1">
+                    <div className="flex-1 pt-1 text-center">
                       <p className="text-sm text-[#4f4f4f] leading-relaxed">Kim Ki-seong and Lee Kwan-young Appointed as Co-CEOs</p>
                     </div>
                   </div>
 
                   <div className="flex gap-8 items-start">
-                    <div className="flex-shrink-0 w-24 text-right">
+                    <div className="flex-shrink-0 w-24 text-center">
                       <div className="text-xl font-bold text-[#004127]">2022</div>
                       <div className="text-xs text-[#7d7d7d] mt-1">12</div>
                     </div>
                     <div className="flex-shrink-0 w-2 h-2 bg-[#004127] rounded-full mt-3" />
-                    <div className="flex-1 pt-1">
+                    <div className="flex-1 pt-1 text-center">
                       <p className="text-sm text-[#4f4f4f] leading-relaxed">Awarded the &quot;USD 30 Million Export Tower&quot; at Korea&apos;s 59th Trade Day </p>
                     </div>
                   </div>
