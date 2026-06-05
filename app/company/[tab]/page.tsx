@@ -307,22 +307,18 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Trust and responsibility</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
-                    Our work follows ethical principles. Founded in 1986 by Mr. Kim Eung-yeol,
-                    Deco Ind Co., Ltd. is currently led by co-CEOs Mr. Lee Kwan-young and
-                    Mr. Kim Ki-seong, who have directed the company since 2012.
+                    Founded in 1986 by Mr. Kim Eung-yeol,
+                    Deco Ind Co., Ltd. is currently led by co-CEOs Mr. Kim Ki-seong and Mr. Lee Kwan-young
+                    , who have directed the company since 2012.
                   </p>
 
 
-
-                  <p className="text-sm text-[#1a1a1a] leading-relaxed">
-                    For business enquiries or specific requests, you can reach the Seoul Office via the email decoindco@gmail.com
-                  </p>
                 </section>
 
                 <section className="mb-8">
                   <h3 className="text-xl font-bold text-[#1a1a1a] mb-4">Where to find us</h3>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-2">
-                    You can contact us by mail and whatsapp <a href="/company/contact" className="text-[#004127] hover:underline">Contacts</a>
+                    For business enquiries or specific requests, You can contact us by email and whatsapp <a href="/company/contact" className="text-[#004127] hover:underline">Contacts</a>
                   </p>
                   <p className="text-sm text-[#1a1a1a] leading-relaxed mb-4">
                     We deliver quickly and securely via trusted carriers, worldwide. We support CIF and FOB shipping terms
