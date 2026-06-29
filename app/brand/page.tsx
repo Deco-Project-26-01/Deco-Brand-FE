@@ -85,7 +85,7 @@ function BrandContent() {
                 </a>
 
                 <a
-                  href="https://lasvegas.jckonline.com/en-us/about/product-directory/product-details.exh-f4860ddf-a464-4242-80d8-2b93e48f90c7.18k%20gold%20mounting%20jewellery.pro-21dd184b-81e8-47c6-ab10-6cc229c4edd0.html#/"
+                  href="https://lasvegas.jckonline.com/en-us/about/exhibitor-directory/exhibitor-details.deco%20ind%20co%20ltd.org-0ee9678f-36bb-4160-94d9-89a8cf5b8015.html#/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-[#7d7d7d] text-[#ffffff] text-sm font-semibold px-6 py-2.5 rounded hover:bg-[#004127]/90 transition-colors w-fit"
