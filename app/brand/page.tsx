@@ -19,7 +19,7 @@ function BrandContent() {
   ]
 
   const heroImages: Record<string, string> = {
-    necklace: "/images/necklace-hero.jpg",
+    necklace: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/18KgoldMountingJCK-loUgOvGSTsTTWRak3FhbY99DUZTEmb.jpg",
     bracelets: "/images/bracelets-hero.jpg",
     earrings: "/images/earrings-hero.jpg",
   }
@@ -52,12 +52,12 @@ function BrandContent() {
         </div>
 
         {/* Hero Image */}
-        <section className="relative w-full h-[500px] md:h-[600px] flex-1">
+        <section className="relative w-full h-[300px] sm:h-[400px] md:h-[600px] flex-1">
           <Image
             src={currentHeroImage}
             alt="Brand Collection"
             fill
-            className="object-cover"
+            className="object-contain sm:object-cover"
             priority
           />
 
