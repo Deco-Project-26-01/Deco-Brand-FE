@@ -132,7 +132,7 @@ export default function CompanyTabPage({ params }: { params: Promise<{ tab: stri
                 </ul>
                 <br />
                 <ul className="space-y-2 text-[#1a1a1a] text-sm leading-relaxed">
-                  <li>Tel </li>
+                  <strong>Tel </strong>
                   <li>Sales: +82-2-747-0908</li>
                   <li>Factory: +82-63-833-8435</li>
                 </ul>
