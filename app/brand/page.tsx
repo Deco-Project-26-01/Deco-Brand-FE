@@ -52,12 +52,12 @@ function BrandContent() {
         </div>
 
         {/* Hero Image */}
-        <section className="relative w-full h-[500px] md:h-[600px] flex-1">
+        <section className="relative w-full h-[300px] sm:h-[400px] md:h-[600px] flex-1">
           <Image
             src={currentHeroImage}
             alt="Brand Collection"
             fill
-            className="object-cover"
+            className="object-contain sm:object-cover"
             priority
           />
 
