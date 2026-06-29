@@ -19,7 +19,7 @@ function BrandContent() {
   ]
 
   const heroImages: Record<string, string> = {
-    necklace: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/18KgoldMountingJCK-loUgOvGSTsTTWRak3FhbY99DUZTEmb.jpg",
+    necklace: "/images/necklace-hero.jpg",
     bracelets: "/images/bracelets-hero.jpg",
     earrings: "/images/earrings-hero.jpg",
   }
