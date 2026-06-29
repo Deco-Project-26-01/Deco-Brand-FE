@@ -24,7 +24,7 @@ function BrandContent() {
     earrings: "/images/earrings-hero.jpg",
   }
 
-  const currentHeroImage = heroImages[category] || "/images/necklace-hero.jpg"
+  const currentHeroImage = heroImages[category] || "/images/necklace.jpg"
 
   return (
     <div className="flex flex-col min-h-screen">
