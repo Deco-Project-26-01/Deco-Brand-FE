@@ -21,8 +21,8 @@ const navItems = [
     label: "Brand",
     href: "/brand",
     submenu: [
-      { label: "Bracelets", href: "/brand?category=bracelets" },
       { label: "Necklaces", href: "/brand?category=necklaces" },
+      { label: "Bracelets", href: "/brand?category=bracelets" },
       { label: "Earrings", href: "/brand?category=earrings" },
     ],
   },
