@@ -10,7 +10,7 @@ Deco indco Ltd 회사소개의 Front-end 레포지토리
 - linkedin
 https://www.linkedin.com/company/decoindco
 
-### showcase
+### Hongkong showcase
 https://www.hktdc.com/event/hkjewellery/en/exhibitor/1S005ZB9Y?ref_source=YouMayAlsoLike&tab=showcase
 
 <hr>

@@ -47,7 +47,6 @@ export default function HomePage() {
                 </p>
                 <p>We work exclusively with high-quality gold materials.</p>
                 <p>
-                  We supply it in a stone-ready setting form suitable for setting diamonds or colored stones.
                   Custom designs, sizes, and gold tones can be produced according to customer requests.
                 </p>
               </div>
@@ -91,7 +90,7 @@ export default function HomePage() {
 
               <div className="max-w-[700px] mx-auto space-y-8 mt-8">
                 <div>
-                  <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product</h3>
+                  <h3 className="text-lg font-semibold text-[#1a1a1a] mb-2">Product Categories</h3>
                   <p className="text-sm text-[#4f4f4f] leading-relaxed">
                     Gold Jewellery Set, White Gold Jewellery, Diamond Jewellery
                   </p>
